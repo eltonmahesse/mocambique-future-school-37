@@ -17,9 +17,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-12 h-12 bg-green-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">EF</span>
+                <span className="text-white font-bold text-xl">CP</span>
               </div>
-              <span className="font-poppins font-bold text-2xl">Escola Futuro</span>
+              <span className="font-poppins font-bold text-2xl">Colégio Pércia</span>
             </div>
             <p className="font-poppins text-blue-100 leading-relaxed mb-6">
               Formamos mentes para transformar o futuro. Educação de qualidade em Moçambique há mais de 15 anos.
@@ -62,6 +62,11 @@ const Footer = () => {
                 </button>
               </li>
               <li>
+                <button onClick={() => scrollToSection('localizacao')} className="font-poppins text-blue-100 hover:text-white transition-colors">
+                  Localização
+                </button>
+              </li>
+              <li>
                 <button onClick={() => scrollToSection('depoimentos')} className="font-poppins text-blue-100 hover:text-white transition-colors">
                   Depoimentos
                 </button>
@@ -92,8 +97,8 @@ const Footer = () => {
                 <Mail className="text-green-primary mt-1" size={20} />
                 <div>
                   <p className="font-poppins font-semibold">Email</p>
-                  <a href="mailto:info@escolafuturo.co.mz" className="font-poppins text-blue-100 hover:text-white transition-colors">
-                    info@escolafuturo.co.mz
+                  <a href="mailto:info@colegiopercia.co.mz" className="font-poppins text-blue-100 hover:text-white transition-colors">
+                    info@colegiopercia.co.mz
                   </a>
                 </div>
               </div>
@@ -103,8 +108,8 @@ const Footer = () => {
                 <div>
                   <p className="font-poppins font-semibold">Endereço</p>
                   <p className="font-poppins text-blue-100">
-                    Av. Julius Nyerere, 1234<br />
-                    Maputo, Moçambique
+                    6H42+8F, Maputo<br />
+                    Próximo à Primeira Rotunda da Circular, Matola
                   </p>
                 </div>
               </div>
@@ -114,7 +119,7 @@ const Footer = () => {
 
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
           <p className="font-poppins text-blue-100">
-            © 2024 Escola Futuro. Todos os direitos reservados. | Educação de qualidade para um futuro melhor.
+            © 2024 Colégio Pércia. Todos os direitos reservados. | Educação de qualidade para um futuro melhor.
           </p>
         </div>
       </div>

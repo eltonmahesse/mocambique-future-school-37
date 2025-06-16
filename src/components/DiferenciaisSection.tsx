@@ -38,7 +38,7 @@ const DiferenciaisSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-4">
-            Por que escolher a <span className="text-green-primary">Escola Futuro</span>?
+            Por que escolher o <span className="text-green-primary">Colégio Pércia</span>?
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
             Nossos diferenciais fazem toda a diferença na formação dos seus filhos

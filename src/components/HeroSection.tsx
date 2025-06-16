@@ -54,7 +54,7 @@ const HeroSection = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"
-                alt="Estudantes da Escola Futuro"
+                alt="Estudantes do Colégio Pércia"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
               <div className="absolute -bottom-4 -right-4 bg-green-primary text-white p-4 rounded-2xl shadow-lg">

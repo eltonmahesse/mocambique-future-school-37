@@ -21,9 +21,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-green-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">EF</span>
+              <span className="text-white font-bold text-lg">CP</span>
             </div>
-            <span className="text-white font-poppins font-bold text-xl">Escola Futuro</span>
+            <span className="text-white font-poppins font-bold text-xl">Colégio Pércia</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -32,6 +32,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Sobre</button>
             <button onClick={() => scrollToSection('programas')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Programas</button>
             <button onClick={() => scrollToSection('instalacoes')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Instalações</button>
+            <button onClick={() => scrollToSection('localizacao')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Localização</button>
             <button onClick={() => scrollToSection('depoimentos')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Depoimentos</button>
             <button onClick={() => scrollToSection('contato')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Contato</button>
           </nav>
@@ -74,6 +75,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Sobre</button>
               <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Programas</button>
               <button onClick={() => scrollToSection('instalacoes')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Instalações</button>
+              <button onClick={() => scrollToSection('localizacao')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Localização</button>
               <button onClick={() => scrollToSection('depoimentos')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Depoimentos</button>
               <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Contato</button>
               <div className="px-4 py-2">

@@ -147,11 +147,11 @@ const ContatoSection = () => {
                 </div>
                 <div>
                   <h4 className="font-poppins font-bold mb-2">Email</h4>
-                  <p className="font-poppins">info@escolafuturo.co.mz</p>
+                  <p className="font-poppins">info@colegiopercia.co.mz</p>
                 </div>
                 <div>
                   <h4 className="font-poppins font-bold mb-2">Endereço</h4>
-                  <p className="font-poppins">Av. Julius Nyerere, Maputo</p>
+                  <p className="font-poppins">6H42+8F, Maputo</p>
                 </div>
               </div>
             </div>

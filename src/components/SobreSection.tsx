@@ -38,15 +38,15 @@ const SobreSection = () => {
             
             <div className="space-y-6 mb-8">
               <p className="font-poppins text-lg text-gray-600 leading-relaxed">
-                A Escola Futuro nasceu com o compromisso de oferecer uma educação transformadora em Moçambique. 
+                O Colégio Pércia nasceu com o compromisso de oferecer uma educação transformadora em Moçambique. 
                 Acreditamos que cada criança tem potencial único e nossa missão é desenvolver esse potencial através 
                 de metodologias inovadoras e um ambiente de aprendizagem estimulante.
               </p>
               
               <p className="font-poppins text-lg text-gray-600 leading-relaxed">
                 Com mais de 15 anos de experiência, formamos gerações de jovens preparados para os desafios do 
-                futuro. Nossa equipe pedagógica qualificada, infraestrutura moderna e valores sólidos fazem da 
-                Escola Futuro a melhor escolha para o desenvolvimento integral dos seus filhos.
+                futuro. Nossa equipe pedagógica qualificada, infraestrutura moderna e valores sólidos fazem do 
+                Colégio Pércia a melhor escolha para o desenvolvimento integral dos seus filhos.
               </p>
             </div>
 
