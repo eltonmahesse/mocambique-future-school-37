@@ -9,7 +9,7 @@ const DepoimentosSection = () => {
     {
       nome: 'Maria Santos',
       foto: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=150&h=150&fit=crop&crop=face',
-      depoimento: 'A Escola Futuro transformou a vida do meu filho. Ele desenvolveu não apenas conhecimento acadêmico, mas também valores importantes para a vida. A equipe é excepcional!',
+      depoimento: 'O Colégio Pércia transformou a vida do meu filho. Ele desenvolveu não apenas conhecimento acadêmico, mas também valores importantes para a vida. A equipe é excepcional!',
       filho: 'João, 12 anos',
       cor: 'bg-red-bright'
     },
@@ -25,7 +25,7 @@ const DepoimentosSection = () => {
       foto: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=150&h=150&fit=crop&crop=face',
       depoimento: 'O acompanhamento personalizado e o carinho com que tratam cada aluno faz toda a diferença. Meu filho melhorou muito suas notas e sua autoestima.',
       filho: 'Pedro, 9 anos',
-      cor: 'bg-blue-royal'
+      cor: 'bg-green-dark'
     }
   ];
 
@@ -45,7 +45,7 @@ const DepoimentosSection = () => {
             O que os <span className="text-green-primary">pais</span> dizem
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
-            Depoimentos reais de famílias que confiam na Escola Futuro
+            Depoimentos reais de famílias que confiam no Colégio Pércia
           </p>
         </div>
 

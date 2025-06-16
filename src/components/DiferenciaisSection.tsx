@@ -7,7 +7,7 @@ const DiferenciaisSection = () => {
       icon: Shield,
       title: 'Ambiente Seguro',
       description: 'Instalações protegidas e ambiente acolhedor para o desenvolvimento dos nossos alunos.',
-      color: 'bg-blue-royal',
+      color: 'bg-green-dark',
       iconColor: 'text-white'
     },
     {

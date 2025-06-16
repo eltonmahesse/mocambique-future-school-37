@@ -132,7 +132,7 @@ const ContatoSection = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-blue-royal hover:bg-blue-800 text-white font-poppins font-bold py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="w-full bg-green-dark hover:bg-green-medium text-white font-poppins font-bold py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Enviar Mensagem
               </Button>

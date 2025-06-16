@@ -11,14 +11,14 @@ const CTASection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-royal to-blue-800">
+    <section className="py-16 bg-gradient-to-r from-green-dark to-green-medium">
       <div className="container mx-auto px-4">
         <div className="text-center animate-fade-in">
           <h2 className="font-poppins font-bold text-3xl md:text-5xl text-white mb-6 leading-tight">
             Garanta o futuro do seu filho com educação de <span className="text-green-light">qualidade</span>
           </h2>
           
-          <p className="font-poppins text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="font-poppins text-lg md:text-xl text-green-100 mb-8 max-w-3xl mx-auto">
             Não perca a oportunidade de oferecer o melhor para seu filho. Matrículas abertas para o próximo ano letivo.
           </p>
 
@@ -35,7 +35,7 @@ const CTASection = () => {
                 <Phone className="text-white" size={24} />
               </div>
               <div className="text-left">
-                <p className="font-poppins text-sm text-blue-200">Ligue agora</p>
+                <p className="font-poppins text-sm text-green-200">Ligue agora</p>
                 <a 
                   href="https://wa.me/258123456789" 
                   target="_blank" 

@@ -10,7 +10,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-blue-royal to-blue-800 flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark to-green-medium flex items-center overflow-hidden">
       {/* Nuvens decorativas */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1200 120" className="w-full h-24 fill-white">
@@ -27,7 +27,7 @@ const HeroSection = () => {
               <span className="text-green-light"> excelência</span>
             </h1>
             
-            <p className="font-poppins text-lg md:text-xl mb-8 text-blue-100 leading-relaxed">
+            <p className="font-poppins text-lg md:text-xl mb-8 text-green-100 leading-relaxed">
               Formamos mentes para transformar o futuro. Uma educação de qualidade que prepara seus filhos para os desafios do amanhã.
             </p>
 
@@ -42,7 +42,7 @@ const HeroSection = () => {
               <Button 
                 onClick={() => scrollToSection('contato')}
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-royal font-poppins font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-green-dark font-poppins font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300"
               >
                 Matricule Agora
               </Button>

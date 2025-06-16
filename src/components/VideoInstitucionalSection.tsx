@@ -50,7 +50,7 @@ const VideoInstitucionalSection = () => {
           <div className="relative">
             <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden aspect-video">
               {!isPlaying ? (
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-royal to-blue-800 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-dark to-green-medium flex items-center justify-center">
                   <div className="text-center">
                     <div className="mb-6">
                       <img 

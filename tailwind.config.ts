@@ -63,12 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores personalizadas da escola - ATUALIZADAS
+				// Cores personalizadas da escola - NOVA PALETA VERDE
 				'green-primary': '#149911',
 				'green-light': '#1EFC1E',
 				'green-dark': '#244F26',
 				'green-medium': '#256D1B',
-				'blue-royal': '#002B7F',
 				'red-bright': '#E53935',
 			},
 			borderRadius: {

@@ -38,12 +38,12 @@ const LocalizacaoSection = () => {
 
           {/* Informações de Localização */}
           <div className="space-y-6">
-            <div className="bg-blue-royal rounded-3xl p-8 text-white">
+            <div className="bg-green-dark rounded-3xl p-8 text-white">
               <div className="flex items-center mb-4">
                 <MapPin className="text-green-light mr-3" size={24} />
                 <h3 className="font-poppins font-bold text-xl">Endereço</h3>
               </div>
-              <p className="font-poppins text-blue-100 mb-6">
+              <p className="font-poppins text-green-100 mb-6">
                 6H42+8F, Maputo<br />
                 Próximo à Primeira Rotunda da Circular, Matola
               </p>
@@ -83,7 +83,7 @@ const LocalizacaoSection = () => {
         {/* Informações Adicionais */}
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-            <div className="bg-blue-royal w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-green-dark w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <MapPin className="text-white" size={24} />
             </div>
             <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Fácil Acesso</h4>

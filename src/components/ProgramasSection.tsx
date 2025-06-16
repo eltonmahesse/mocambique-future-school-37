@@ -6,7 +6,7 @@ const ProgramasSection = () => {
       subtitulo: '1ª - 7ª Classe',
       descricao: 'Base sólida para o desenvolvimento cognitivo e social das crianças com metodologia lúdica e participativa.',
       imagem: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
-      cor: 'bg-blue-royal'
+      cor: 'bg-green-dark'
     },
     {
       titulo: 'Ensino Secundário Geral',
@@ -27,7 +27,7 @@ const ProgramasSection = () => {
       subtitulo: 'Apoio Especializado',
       descricao: 'Aulas de reforço e preparação para exames com acompanhamento personalizado.',
       imagem: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop',
-      cor: 'bg-orange-500'
+      cor: 'bg-green-medium'
     }
   ];
 

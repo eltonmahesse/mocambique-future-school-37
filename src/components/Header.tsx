@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-blue-royal z-50 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 bg-green-dark z-50 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -69,15 +69,15 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-blue-royal border-t border-blue-800">
+          <div className="md:hidden bg-green-dark border-t border-green-medium">
             <nav className="py-4 space-y-2">
-              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Home</button>
-              <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Sobre</button>
-              <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Programas</button>
-              <button onClick={() => scrollToSection('instalacoes')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Instalações</button>
-              <button onClick={() => scrollToSection('localizacao')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Localização</button>
-              <button onClick={() => scrollToSection('depoimentos')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Depoimentos</button>
-              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-4 py-2 text-white hover:bg-blue-800 font-poppins">Contato</button>
+              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Home</button>
+              <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Sobre</button>
+              <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Programas</button>
+              <button onClick={() => scrollToSection('instalacoes')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Instalações</button>
+              <button onClick={() => scrollToSection('localizacao')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Localização</button>
+              <button onClick={() => scrollToSection('depoimentos')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Depoimentos</button>
+              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-4 py-2 text-white hover:bg-green-medium font-poppins">Contato</button>
               <div className="px-4 py-2">
                 <Button 
                   onClick={() => scrollToSection('contato')}
