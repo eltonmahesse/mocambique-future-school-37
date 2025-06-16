@@ -1,15 +1,8 @@
 
-import { MapPin, Phone, Navigation } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const LocalizacaoSection = () => {
-  const handleNavigate = () => {
-    const origin = "Primeira Rotunda da Circular, Matola";
-    const destination = "6H42+8F, Maputo"; // Coordenadas do Colégio Pércia
-    const url = `https://www.google.com/maps/dir/${encodeURIComponent(origin)}/${encodeURIComponent(destination)}`;
-    window.open(url, '_blank');
-  };
-
   const openInMaps = () => {
     window.open('https://maps.app.goo.gl/GPUJfnTm2qzTJiCt5', '_blank');
   };
@@ -64,25 +57,6 @@ const LocalizacaoSection = () => {
               </Button>
             </div>
 
-            <div className="bg-red-bright rounded-3xl p-8 text-white">
-              <div className="flex items-center mb-4">
-                <Navigation className="text-white mr-3" size={24} />
-                <h3 className="font-poppins font-bold text-xl">Como Chegar</h3>
-              </div>
-              <p className="font-poppins text-red-100 mb-6">
-                <strong>Ponto de partida:</strong> Primeira Rotunda da Circular, Matola<br />
-                <strong>Destino:</strong> Colégio Pércia
-              </p>
-              
-              <Button
-                onClick={handleNavigate}
-                className="w-full bg-white text-red-bright hover:bg-gray-100 font-poppins font-semibold py-3 rounded-xl transition-all duration-300"
-              >
-                <Navigation className="mr-2" size={18} />
-                Obter Direções
-              </Button>
-            </div>
-
             <div className="bg-green-primary rounded-3xl p-8 text-white">
               <div className="flex items-center mb-4">
                 <Phone className="text-white mr-3" size={24} />
@@ -118,10 +92,10 @@ const LocalizacaoSection = () => {
 
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
             <div className="bg-green-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Navigation className="text-white" size={24} />
+              <MapPin className="text-white" size={24} />
             </div>
-            <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Bem Sinalizado</h4>
-            <p className="font-poppins text-gray-600">Placas indicativas e referências claras para facilitar a chegada</p>
+            <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Bem Localizado</h4>
+            <p className="font-poppins text-gray-600">Próximo a pontos de referência conhecidos na região</p>
           </div>
 
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg">

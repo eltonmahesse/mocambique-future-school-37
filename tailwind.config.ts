@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores personalizadas da escola
+				// Cores personalizadas da escola - ATUALIZADAS
 				'green-primary': '#149911',
 				'green-light': '#1EFC1E',
 				'green-dark': '#244F26',
