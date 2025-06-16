@@ -26,7 +26,7 @@ const Header = () => {
             <span className="text-white font-poppins font-bold text-lg md:text-xl">Colégio Pércia</span>
           </div>
 
-          {/* Desktop Navigation - Simplified to 4 items */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <button onClick={() => scrollToSection('home')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Home</button>
             <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Sobre</button>
@@ -51,7 +51,7 @@ const Header = () => {
               onClick={() => scrollToSection('contato')}
               className="bg-red-bright hover:bg-green-primary text-white font-poppins font-semibold px-4 py-2 rounded-full transition-colors text-sm"
             >
-              Admissão
+              Matricular Agora
             </Button>
           </div>
 
@@ -77,7 +77,7 @@ const Header = () => {
                   onClick={() => scrollToSection('contato')}
                   className="w-full bg-red-bright hover:bg-green-primary text-white font-poppins font-semibold py-3 rounded-full transition-colors"
                 >
-                  Admissão
+                  Matricular Agora
                 </Button>
               </div>
             </nav>
