@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Facebook, Instagram, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -20,13 +19,6 @@ const Header = () => {
       <div className="bg-green-medium text-white py-2 hidden md:block">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between text-sm">
-            {/* Esquerda: Mensagem promocional */}
-            <div className="flex-1">
-              <p className="font-poppins text-green-100">
-                Primeiros 20 alunos ganham 10% de desconto na primeira mensalidade. Aproveite!
-              </p>
-            </div>
-            
             {/* Centro: Informações de contato */}
             <div className="flex items-center space-x-6 flex-1 justify-center">
               <div className="flex items-center space-x-2">
