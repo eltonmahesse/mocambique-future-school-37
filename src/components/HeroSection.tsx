@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { GraduationCap, Globe, Users, MapPin, Sparkles } from 'lucide-react';
+import { GraduationCap, Globe, Users, MapPin, Sparkles, ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -118,57 +118,58 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Enhanced CTAs */}
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-6 animate-fade-in pt-4">
+            {/* Enhanced CTAs - Improved button alignment */}
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 animate-fade-in pt-4">
               <Button 
-                onClick={() => scrollToSection('contato')}
-                className="group relative bg-gradient-to-r from-red-bright to-red-600 hover:from-red-600 hover:to-red-700 text-white font-poppins font-bold px-10 py-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-red-500/25 border-0 overflow-hidden"
+                onClick={() => scrollToSection('programas')}
+                className="group relative bg-gradient-to-r from-green-light to-green-primary hover:from-green-primary hover:to-green-medium text-green-dark font-poppins font-bold px-10 py-6 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-green-light/25 border-0 overflow-hidden min-w-[200px]"
               >
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <span className="relative flex items-center space-x-2">
-                  <span>Matricule seu filho hoje</span>
-                  <Sparkles className="w-5 h-5 animate-pulse" />
+                <span className="relative flex items-center justify-center space-x-2">
+                  <span>Saiba mais</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Button>
               
-              <button
-                onClick={() => scrollToSection('programas')}
-                className="group font-poppins font-semibold text-green-light hover:text-white transition-all duration-300 py-6 px-4 relative"
+              <Button
+                onClick={() => scrollToSection('contato')}
+                variant="outline"
+                className="group font-poppins font-semibold text-white border-2 border-white/30 hover:border-green-light hover:bg-green-light/10 transition-all duration-300 py-6 px-8 rounded-2xl text-lg min-w-[200px] backdrop-blur-sm"
               >
-                <span className="relative z-10">Saiba mais sobre os extracurriculares</span>
-                <div className="absolute bottom-4 left-0 w-full h-0.5 bg-green-light scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              </button>
+                <span className="relative flex items-center justify-center space-x-2">
+                  <span>Matricule hoje</span>
+                  <Sparkles className="w-5 h-5 animate-pulse" />
+                </span>
+              </Button>
             </div>
           </div>
 
-          {/* Enhanced Image Section - 40% */}
+          {/* Enhanced Image Section - 40% with improved design */}
           <div className="lg:col-span-2 relative flex justify-center animate-fade-in">
             <div className="relative group">
-              {/* Enhanced container with glassmorphism */}
-              <div className="bg-white/15 backdrop-blur-xl rounded-3xl p-6 md:p-8 shadow-2xl max-w-md w-full border border-white/20 group-hover:shadow-3xl transition-all duration-500">
-                <div className="relative overflow-hidden rounded-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop"
-                    alt="Estudantes do Colégio Pércia em sala de aula moderna"
-                    className="w-full h-56 md:h-72 object-cover shadow-lg transition-all duration-700 group-hover:scale-110"
-                  />
-                  
-                  {/* Enhanced overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-dark/80 via-transparent to-transparent"></div>
-                  
-                  {/* Location badge */}
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/20">
-                      <div className="flex items-center space-x-2 text-white">
-                        <MapPin className="w-4 h-4 text-green-light" />
-                        <span className="font-poppins text-sm font-semibold">Maputo, Moçambique</span>
-                      </div>
+              {/* Clean image container without borders */}
+              <div className="relative overflow-hidden rounded-3xl max-w-md w-full">
+                <img
+                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop"
+                  alt="Estudantes do Colégio Pércia em sala de aula moderna"
+                  className="w-full h-64 md:h-80 object-cover transition-all duration-700 group-hover:scale-110"
+                />
+                
+                {/* Subtle overlay only on image */}
+                <div className="absolute inset-0 bg-gradient-to-t from-green-dark/20 via-transparent to-transparent"></div>
+                
+                {/* Location badge */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/90 backdrop-blur-md rounded-xl p-3 border-0">
+                    <div className="flex items-center space-x-2 text-green-dark">
+                      <MapPin className="w-4 h-4 text-green-primary" />
+                      <span className="font-poppins text-sm font-semibold">Maputo, Moçambique</span>
                     </div>
                   </div>
                 </div>
               </div>
               
-              {/* Enhanced floating elements */}
+              {/* Floating decorative elements */}
               <div className="absolute -top-6 -right-6 w-12 h-12 bg-gradient-to-br from-green-light to-green-primary rounded-2xl animate-pulse shadow-lg flex items-center justify-center">
                 <Sparkles className="w-6 h-6 text-white" />
               </div>
