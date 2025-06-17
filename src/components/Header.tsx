@@ -26,18 +26,18 @@ const Header = () => {
             <span className="text-white font-poppins font-bold text-lg md:text-xl">Colégio Pércia</span>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Simplified */}
           <nav className="hidden md:flex items-center space-x-6">
             <button onClick={() => scrollToSection('home')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Home</button>
             <button onClick={() => scrollToSection('sobre')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Sobre</button>
             <button onClick={() => scrollToSection('localizacao')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Localização</button>
-            <button onClick={() => scrollToSection('contato')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Contato</button>
+            <button onClick={() => scrollToSection('contato')} className="text-white hover:text-green-light transition-colors font-poppins font-medium">Contacto</button>
           </nav>
 
-          {/* Social Icons & CTA */}
+          {/* Social Icons & CTA - Desktop */}
           <div className="hidden md:flex items-center space-x-3">
             <div className="flex items-center space-x-2">
-              <a href="https://wa.me/258123456789" target="_blank" rel="noopener noreferrer" className="text-green-light hover:text-white transition-colors">
+              <a href="tel:858681368" className="text-green-light hover:text-white transition-colors">
                 <Phone size={18} />
               </a>
               <a href="#" className="text-white hover:text-green-light transition-colors">
@@ -57,21 +57,21 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white z-50 relative"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Fixed positioning to prevent layout issues */}
         {isMenuOpen && (
-          <div className="md:hidden bg-green-dark border-t border-green-medium">
-            <nav className="py-4 space-y-1">
+          <div className="fixed top-16 left-0 right-0 bg-green-dark border-t border-green-medium md:hidden z-40">
+            <nav className="py-4 space-y-1 max-h-screen overflow-y-auto">
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-4 py-3 text-white hover:bg-green-medium font-poppins">Home</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-4 py-3 text-white hover:bg-green-medium font-poppins">Sobre</button>
               <button onClick={() => scrollToSection('localizacao')} className="block w-full text-left px-4 py-3 text-white hover:bg-green-medium font-poppins">Localização</button>
-              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-4 py-3 text-white hover:bg-green-medium font-poppins">Contato</button>
+              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-4 py-3 text-white hover:bg-green-medium font-poppins">Contacto</button>
               <div className="px-4 py-2">
                 <Button 
                   onClick={() => scrollToSection('contato')}

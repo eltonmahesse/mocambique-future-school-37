@@ -32,44 +32,43 @@ const ProgramasSection = () => {
   ];
 
   return (
-    <section id="programas" className="py-16 bg-gray-50">
+    <section id="programas" className="py-12 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="font-poppins font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 mb-4">
+          <h2 className="font-poppins font-bold text-2xl md:text-3xl lg:text-4xl text-gray-800 mb-4">
             Nossos <span className="text-green-primary">Programas</span>
           </h2>
-          <p className="font-poppins text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="font-poppins text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Oferecemos programas educacionais completos para todas as fases do desenvolvimento
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {programas.map((programa, index) => (
             <div
               key={index}
-              className="group hover:scale-105 transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group hover:scale-105 transition-all duration-300"
             >
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
                 {/* Imagem */}
-                <div className="relative h-40 md:h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden flex-shrink-0">
                   <img
                     src={programa.imagem}
                     alt={programa.titulo}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className={`absolute top-3 right-3 ${programa.cor} text-white px-2 py-1 rounded-full`}>
+                  <div className={`absolute top-3 right-3 ${programa.cor} text-white px-3 py-1 rounded-full`}>
                     <span className="font-poppins font-semibold text-xs">{programa.subtitulo}</span>
                   </div>
                 </div>
 
                 {/* Conteúdo */}
-                <div className="p-4 md:p-6">
-                  <h3 className="font-poppins font-bold text-lg md:text-xl text-gray-800 mb-2 md:mb-3">
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="font-poppins font-bold text-lg md:text-xl text-gray-800 mb-3">
                     {programa.titulo}
                   </h3>
                   
-                  <p className="font-poppins text-sm md:text-base text-gray-600 leading-relaxed mb-3 md:mb-4">
+                  <p className="font-poppins text-sm md:text-base text-gray-600 leading-relaxed mb-4 flex-grow">
                     {programa.descricao}
                   </p>
 
