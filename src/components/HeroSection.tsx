@@ -41,7 +41,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Imagem ilustrativa */}
+          {/* Imagem ilustrativa - sem caixa de texto sobreposta */}
           <div className="relative flex justify-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-2xl max-w-md w-full">
               <img
@@ -49,11 +49,6 @@ const HeroSection = () => {
                 alt="Estudantes do Colégio Pércia"
                 className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg"
               />
-              <div className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4 bg-green-primary text-white p-3 md:p-4 rounded-xl shadow-lg max-w-[200px]">
-                <p className="font-poppins font-bold text-xs md:text-sm text-center">
-                  "Formamos mentes para<br />transformar o futuro"
-                </p>
-              </div>
             </div>
           </div>
         </div>
