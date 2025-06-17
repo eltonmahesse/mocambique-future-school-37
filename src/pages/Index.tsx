@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import DiferenciaisSection from '@/components/DiferenciaisSection';
 import SobreSection from '@/components/SobreSection';
 import ProgramasSection from '@/components/ProgramasSection';
+import PrecosSection from '@/components/PrecosSection';
 import VideoInstitucionalSection from '@/components/VideoInstitucionalSection';
 import CTASection from '@/components/CTASection';
 import GaleriaSection from '@/components/GaleriaSection';
@@ -20,6 +21,7 @@ const Index = () => {
       <DiferenciaisSection />
       <SobreSection />
       <ProgramasSection />
+      <PrecosSection />
       <VideoInstitucionalSection />
       <CTASection />
       <GaleriaSection />
