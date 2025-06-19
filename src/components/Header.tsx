@@ -44,7 +44,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Menu Principal - simplificado */}
+      {/* Menu Principal - expandido */}
       <div className="bg-green-medium">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between py-4">
@@ -56,8 +56,8 @@ const Header = () => {
               <span className="text-white font-poppins font-bold text-xl">Colégio Pércia</span>
             </div>
 
-            {/* Menu Desktop - apenas 4 itens essenciais */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            {/* Menu Desktop - expandido com novas seções */}
+            <nav className="hidden lg:flex items-center space-x-6">
               <button 
                 onClick={() => scrollToSection('home')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium"
@@ -75,6 +75,18 @@ const Header = () => {
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium"
               >
                 Programas
+              </button>
+              <button 
+                onClick={() => scrollToSection('instalacoes')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+              >
+                Instalações
+              </button>
+              <button 
+                onClick={() => scrollToSection('videos')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+              >
+                Vídeos
               </button>
               <button 
                 onClick={() => scrollToSection('contato')} 
@@ -111,6 +123,8 @@ const Header = () => {
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Início</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Sobre Nós</button>
               <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Programas</button>
+              <button onClick={() => scrollToSection('instalacoes')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Instalações</button>
+              <button onClick={() => scrollToSection('videos')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Vídeos</button>
               <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Contacto</button>
               
               <div className="px-6 py-4">
