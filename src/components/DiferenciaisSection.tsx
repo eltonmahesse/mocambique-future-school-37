@@ -24,7 +24,7 @@ const DiferenciaisSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="relative py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-6">
