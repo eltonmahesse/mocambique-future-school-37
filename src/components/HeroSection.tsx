@@ -19,10 +19,15 @@ const HeroSection = () => {
         }}></div>
       </div>
 
-      {/* Bottom wave - ajustado para evitar linha branca */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
-        <svg viewBox="0 0 1200 120" className="w-full h-20 fill-white block">
-          <path d="M0,120 C300,60 600,40 1200,80 L1200,120 Z" />
+      {/* Bottom wave - ajustado para eliminar linha verde */}
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
+        <svg 
+          viewBox="0 0 1200 120" 
+          className="w-full h-20 fill-white block" 
+          preserveAspectRatio="none"
+          style={{ transform: 'translateY(1px)' }}
+        >
+          <path d="M0,120 L0,80 C300,60 600,40 1200,80 L1200,120 Z" />
         </svg>
       </div>
 
