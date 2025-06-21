@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -36,19 +36,12 @@ const Header = () => {
                 <MapPin size={14} className="text-green-light flex-shrink-0" />
                 <span className="font-poppins">Matola, Intaka 2</span>
               </div>
-              <a 
-                href="https://wa.me/258858681368" 
-                className="text-green-light hover:text-white transition-colors"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle size={14} />
-              </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Sub-header Tablet - Todas as informações em uma linha */}
+      {/* Sub-header Tablet - Todas as informações sem contacto e sem último ícone */}
       <div className="bg-green-dark text-white py-2 hidden md:block lg:hidden">
         <div className="container">
           <div className="flex items-center justify-between text-sm">
@@ -62,18 +55,9 @@ const Header = () => {
                 <span className="font-poppins">info@colegiopercia.co.mz</span>
               </div>
             </div>
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <MapPin size={12} className="text-green-light" />
-                <span className="font-poppins">Matola, Intaka 2</span>
-              </div>
-              <a 
-                href="https://wa.me/258858681368" 
-                className="text-green-light hover:text-white transition-colors"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle size={12} />
-              </a>
+            <div className="flex items-center space-x-2">
+              <MapPin size={12} className="text-green-light" />
+              <span className="font-poppins">Matola, Intaka 2</span>
             </div>
           </div>
         </div>
@@ -132,12 +116,6 @@ const Header = () => {
               >
                 Programas
               </button>
-              <button 
-                onClick={() => scrollToSection('contato')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
-              >
-                Contacto
-              </button>
             </nav>
 
             {/* Menu Tablet - com links reduzidos */}
@@ -160,19 +138,13 @@ const Header = () => {
               >
                 Programas
               </button>
-              <button 
-                onClick={() => scrollToSection('contato')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
-              >
-                Contacto
-              </button>
             </nav>
 
             {/* CTA Principal - com texto menor e padding reduzido */}
             <div className="hidden md:block flex-shrink-0 ml-2 lg:ml-4">
               <Button 
                 onClick={() => scrollToSection('contato')}
-                className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-3 lg:px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 text-xs lg:text-sm whitespace-nowrap"
+                className="bg-red-bright hover-bg-red-600 text-white font-poppins font-bold px-3 lg:px-4 py-2 rounded-full transition-all duration-300 transform hover-scale-105 text-xs lg:text-sm whitespace-nowrap"
               >
                 Matricular
               </Button>
@@ -196,7 +168,6 @@ const Header = () => {
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Início</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Sobre Nós</button>
               <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Programas</button>
-              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Contacto</button>
               
               <div className="px-6 py-4">
                 <Button 

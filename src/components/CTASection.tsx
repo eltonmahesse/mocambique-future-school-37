@@ -28,19 +28,11 @@ const CTASection = () => {
               Não deixe para depois. As matrículas estão abertas e as vagas são limitadas para garantir a qualidade do ensino.
             </p>
 
-            {/* Benefícios da matrícula imediata */}
-            <div className="grid-responsive-3 mb-8">
+            {/* Benefício único disponível */}
+            <div className="mb-8">
               <div className="flex items-center space-x-3 justify-center">
                 <CheckCircle className="w-5 h-5 text-green-primary flex-shrink-0" />
-                <span className="font-poppins text-gray-700 text-responsive-sm">Matrícula Gratuita</span>
-              </div>
-              <div className="flex items-center space-x-3 justify-center">
-                <CheckCircle className="w-5 h-5 text-green-primary flex-shrink-0" />
-                <span className="font-poppins text-gray-700 text-responsive-sm">Desconto na 1ª Mensalidade</span>
-              </div>
-              <div className="flex items-center space-x-3 justify-center">
-                <CheckCircle className="w-5 h-5 text-green-primary flex-shrink-0" />
-                <span className="font-poppins text-gray-700 text-responsive-sm">Kit Escolar Incluído</span>
+                <span className="font-poppins text-gray-700 text-responsive-sm">Educação de Qualidade Garantida</span>
               </div>
             </div>
           </div>

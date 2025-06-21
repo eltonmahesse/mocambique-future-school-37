@@ -10,13 +10,6 @@ interface PriceCard2026Props {
 }
 
 const PriceCard2026 = ({ categoria, matricula, propina, processo, disciplinas }: PriceCard2026Props) => {
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="card-uniform bg-green-50 border border-green-100 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
       {/* Header do Card */}
@@ -46,7 +39,7 @@ const PriceCard2026 = ({ categoria, matricula, propina, processo, disciplinas }:
       </div>
 
       {/* Disciplinas */}
-      <div className="border-t border-green-200 pt-4 mb-6 px-4 md:px-6 card-content">
+      <div className="border-t border-green-200 pt-4 px-4 md:px-6 card-content">
         <h4 className="font-poppins font-semibold text-green-dark mb-3 text-sm">Disciplinas Incluídas:</h4>
         <div className="flex flex-wrap gap-1">
           {disciplinas.map((disciplina, index) => (
@@ -58,16 +51,6 @@ const PriceCard2026 = ({ categoria, matricula, propina, processo, disciplinas }:
             </span>
           ))}
         </div>
-      </div>
-
-      {/* Botão CTA */}
-      <div className="px-4 md:px-6 pb-4 md:pb-6 mt-auto">
-        <Button
-          onClick={() => scrollToSection('contato')}
-          className="w-full bg-red-bright hover:bg-red-600 text-white font-poppins font-bold py-3 rounded-xl transition-all duration-300 text-responsive-sm"
-        >
-          Matricular Agora
-        </Button>
       </div>
     </div>
   );
