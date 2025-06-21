@@ -112,7 +112,7 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Menu Desktop - com espaçamento melhorado */}
+            {/* Menu Desktop - com links reduzidos */}
             <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10">
               <button 
                 onClick={() => scrollToSection('home')} 
@@ -133,18 +133,6 @@ const Header = () => {
                 Programas
               </button>
               <button 
-                onClick={() => scrollToSection('instalacoes')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
-              >
-                Instalações
-              </button>
-              <button 
-                onClick={() => scrollToSection('videos')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
-              >
-                Vídeos
-              </button>
-              <button 
                 onClick={() => scrollToSection('contato')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
@@ -152,7 +140,7 @@ const Header = () => {
               </button>
             </nav>
 
-            {/* Menu Tablet - com espaçamento otimizado */}
+            {/* Menu Tablet - com links reduzidos */}
             <nav className="hidden md:flex lg:hidden items-center space-x-4 xl:space-x-6">
               <button 
                 onClick={() => scrollToSection('home')} 
@@ -173,18 +161,6 @@ const Header = () => {
                 Programas
               </button>
               <button 
-                onClick={() => scrollToSection('instalacoes')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
-              >
-                Instalações
-              </button>
-              <button 
-                onClick={() => scrollToSection('videos')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
-              >
-                Vídeos
-              </button>
-              <button 
                 onClick={() => scrollToSection('contato')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
@@ -192,11 +168,11 @@ const Header = () => {
               </button>
             </nav>
 
-            {/* CTA Principal - com espaçamento melhorado */}
-            <div className="hidden md:block flex-shrink-0 ml-4 lg:ml-6">
+            {/* CTA Principal - com texto menor e padding reduzido */}
+            <div className="hidden md:block flex-shrink-0 ml-2 lg:ml-4">
               <Button 
                 onClick={() => scrollToSection('contato')}
-                className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-4 lg:px-6 xl:px-8 py-2 lg:py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm lg:text-base whitespace-nowrap"
+                className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-3 lg:px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 text-xs lg:text-sm whitespace-nowrap"
               >
                 Matricular
               </Button>
@@ -204,7 +180,7 @@ const Header = () => {
 
             {/* Menu Mobile Toggle - com espaçamento adequado */}
             <button
-              className="md:hidden text-white z-dropdown relative p-2 ml-4 flex-shrink-0"
+              className="md:hidden text-white z-dropdown relative p-2 ml-2 flex-shrink-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
             >
@@ -213,21 +189,19 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Menu Mobile - melhorado */}
+        {/* Menu Mobile - com links reduzidos */}
         {isMenuOpen && (
           <div className="md:hidden bg-green-dark border-t border-green-medium z-sub-header">
             <nav className="py-4 space-y-1">
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Início</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Sobre Nós</button>
               <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Programas</button>
-              <button onClick={() => scrollToSection('instalacoes')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Instalações</button>
-              <button onClick={() => scrollToSection('videos')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Vídeos</button>
               <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Contacto</button>
               
               <div className="px-6 py-4">
                 <Button 
                   onClick={() => scrollToSection('contato')}
-                  className="w-full bg-red-bright hover:bg-red-600 text-white font-poppins font-bold py-3 rounded-full"
+                  className="w-full bg-red-bright hover:bg-red-600 text-white font-poppins font-bold py-3 rounded-full text-sm"
                 >
                   Matricular
                 </Button>
