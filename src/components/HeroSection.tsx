@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-20 md:pt-32 lg:pt-28">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 py-6 md:py-8 lg:py-12">
-        <div className="grid-responsive-2 items-center min-h-[calc(100vh-200px)] md:min-h-[calc(100vh-180px)] lg:min-h-[calc(100vh-160px)]">
+        <div className="grid-responsive-2 items-center min-h-[calc(100vh-200px)] md:min-h-[calc(100vh-220px)] lg:min-h-[calc(100vh-160px)]">
           {/* Conteúdo Principal */}
           <div className="text-white text-center lg:text-left space-y-6 md:space-y-8 order-2 lg:order-1">
             

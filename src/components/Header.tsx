@@ -16,16 +16,16 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-header shadow-lg">
-      {/* Faixa Superior - Responsiva */}
-      <div className="bg-green-dark text-white py-2 hidden md:block">
+      {/* Faixa Superior - Desktop */}
+      <div className="bg-green-dark text-white py-2 hidden lg:block">
         <div className="container">
           <div className="flex items-center justify-between text-sm">
-            <div className="flex items-center space-x-4 lg:space-x-6">
+            <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone size={14} className="text-green-light flex-shrink-0" />
                 <span className="font-poppins">858 681 368</span>
               </div>
-              <div className="hidden lg:flex items-center space-x-2">
+              <div className="flex items-center space-x-2">
                 <Mail size={14} className="text-green-light flex-shrink-0" />
                 <span className="font-poppins">info@colegiopercia.co.mz</span>
               </div>
@@ -34,8 +34,7 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <MapPin size={14} className="text-green-light flex-shrink-0" />
-                <span className="font-poppins hidden lg:inline">Matola, Intaka 2</span>
-                <span className="font-poppins lg:hidden">Matola</span>
+                <span className="font-poppins">Matola, Intaka 2</span>
               </div>
               <a 
                 href="https://wa.me/258858681368" 
@@ -49,7 +48,38 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Sub-header Mobile - Visível apenas no mobile */}
+      {/* Sub-header Tablet - Todas as informações em uma linha */}
+      <div className="bg-green-dark text-white py-2 hidden md:block lg:hidden">
+        <div className="container">
+          <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
+                <Phone size={12} className="text-green-light" />
+                <span className="font-poppins">858 681 368</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail size={12} className="text-green-light" />
+                <span className="font-poppins">info@colegiopercia.co.mz</span>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2">
+                <MapPin size={12} className="text-green-light" />
+                <span className="font-poppins">Matola, Intaka 2</span>
+              </div>
+              <a 
+                href="https://wa.me/258858681368" 
+                className="text-green-light hover:text-white transition-colors"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle size={12} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Sub-header Mobile - Simplificado */}
       <div className="bg-green-dark text-white py-2 md:hidden">
         <div className="container">
           <div className="flex items-center justify-between text-xs">
@@ -120,8 +150,8 @@ const Header = () => {
               </button>
             </nav>
 
-            {/* Menu Tablet - links reduzidos */}
-            <nav className="hidden md:flex lg:hidden items-center space-x-4">
+            {/* Menu Tablet - TODOS os links com espaçamento otimizado */}
+            <nav className="hidden md:flex lg:hidden items-center space-x-3">
               <button 
                 onClick={() => scrollToSection('home')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
@@ -129,10 +159,28 @@ const Header = () => {
                 Início
               </button>
               <button 
+                onClick={() => scrollToSection('sobre')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+              >
+                Sobre
+              </button>
+              <button 
                 onClick={() => scrollToSection('programas')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
               >
                 Programas
+              </button>
+              <button 
+                onClick={() => scrollToSection('instalacoes')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+              >
+                Instalações
+              </button>
+              <button 
+                onClick={() => scrollToSection('videos')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+              >
+                Vídeos
               </button>
               <button 
                 onClick={() => scrollToSection('contato')} 
