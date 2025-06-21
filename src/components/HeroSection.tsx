@@ -31,10 +31,10 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 max-w-6xl w-full relative z-10 pt-32 pb-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
+      <div className="container mx-auto px-4 max-w-6xl w-full relative z-10 pt-20 md:pt-32 pb-16">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center h-full">
           {/* Conteúdo Principal - simplificado e focado */}
-          <div className="text-white text-center lg:text-left space-y-8">
+          <div className="text-white text-center lg:text-left space-y-6 md:space-y-8">
             
             {/* Social Proof Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 text-sm">
@@ -48,30 +48,30 @@ const HeroSection = () => {
             
             {/* Título Principal - mais direto */}
             <div className="space-y-4">
-              <h1 className="font-poppins font-black text-4xl md:text-5xl lg:text-6xl leading-tight">
+              <h1 className="font-poppins font-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
                 O Futuro do seu{' '}
                 <span className="text-green-light">Filho</span>{' '}
                 Começa Aqui
               </h1>
-              <p className="font-poppins text-xl md:text-2xl text-green-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="font-poppins text-lg md:text-xl lg:text-2xl text-green-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 Educação de qualidade do 1º ao 12º ano em Moçambique
               </p>
             </div>
             
             {/* Proposta de Valor - clara e concisa */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/20">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-2xl font-bold text-green-light">15+</div>
-                  <div className="text-sm text-white/80">Anos de experiência</div>
+                  <div className="text-xl md:text-2xl font-bold text-green-light">15+</div>
+                  <div className="text-xs md:text-sm text-white/80">Anos de experiência</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-green-light">98%</div>
-                  <div className="text-sm text-white/80">Taxa de aprovação</div>
+                  <div className="text-xl md:text-2xl font-bold text-green-light">98%</div>
+                  <div className="text-xs md:text-sm text-white/80">Taxa de aprovação</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-green-light">200+</div>
-                  <div className="text-sm text-white/80">Alunos matriculados</div>
+                  <div className="text-xl md:text-2xl font-bold text-green-light">200+</div>
+                  <div className="text-xs md:text-sm text-white/80">Alunos matriculados</div>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <Button 
                 onClick={() => scrollToSection('contato')}
-                className="group relative bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-10 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl w-full lg:w-auto"
+                className="group relative bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-8 md:px-10 py-3 md:py-4 rounded-2xl text-base md:text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl w-full lg:w-auto"
               >
                 <span className="flex items-center justify-center space-x-3">
                   <span>Garantir Vaga Agora</span>
@@ -102,20 +102,20 @@ const HeroSection = () => {
                 <img
                   src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&h=600&fit=crop"
                   alt="Estudantes do Colégio Pércia"
-                  className="w-full h-96 object-cover transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-80 md:h-96 object-cover transition-all duration-700 group-hover:scale-105"
                 />
                 
                 {/* Overlay com informação */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4">
+                <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 md:p-4">
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="font-poppins font-bold text-green-dark">Ensino de Qualidade</div>
-                        <div className="text-sm text-gray-600">Matola, Moçambique</div>
+                        <div className="font-poppins font-bold text-green-dark text-sm md:text-base">Ensino de Qualidade</div>
+                        <div className="text-xs md:text-sm text-gray-600">Matola, Moçambique</div>
                       </div>
                       <div className="flex items-center space-x-1">
                         <Users className="w-4 h-4 text-green-primary" />
-                        <span className="text-sm font-semibold text-green-dark">200+ alunos</span>
+                        <span className="text-xs md:text-sm font-semibold text-green-dark">200+ alunos</span>
                       </div>
                     </div>
                   </div>
