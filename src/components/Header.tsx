@@ -99,110 +99,112 @@ const Header = () => {
       <div className="bg-green-medium">
         <div className="container">
           <div className="flex items-center justify-between py-4">
-            {/* Logo */}
-            <div className="flex items-center space-x-3 flex-shrink-0">
-              <div className="w-10 h-10 bg-green-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">CP</span>
+            {/* Logo - com melhor espaçamento */}
+            <div className="flex items-center space-x-3 flex-shrink-0 min-w-fit">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-green-primary rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-lg md:text-xl">CP</span>
               </div>
-              <span className="text-white font-poppins font-bold text-lg md:text-xl">
-                <span className="hidden sm:inline">Colégio Pércia</span>
-                <span className="sm:hidden">C. Pércia</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-white font-poppins font-bold text-base md:text-lg lg:text-xl leading-tight">
+                  <span className="hidden sm:inline">Colégio Pércia</span>
+                  <span className="sm:hidden">C. Pércia</span>
+                </span>
+              </div>
             </div>
 
-            {/* Menu Desktop - todos os links */}
-            <nav className="hidden lg:flex items-center space-x-6">
+            {/* Menu Desktop - com espaçamento melhorado */}
+            <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10">
               <button 
                 onClick={() => scrollToSection('home')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('programas')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
                 Programas
               </button>
               <button 
                 onClick={() => scrollToSection('instalacoes')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
                 Instalações
               </button>
               <button 
                 onClick={() => scrollToSection('videos')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
                 Vídeos
               </button>
               <button 
                 onClick={() => scrollToSection('contato')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
                 Contacto
               </button>
             </nav>
 
-            {/* Menu Tablet - TODOS os links com espaçamento otimizado */}
-            <nav className="hidden md:flex lg:hidden items-center space-x-3">
+            {/* Menu Tablet - com espaçamento otimizado */}
+            <nav className="hidden md:flex lg:hidden items-center space-x-4 xl:space-x-6">
               <button 
                 onClick={() => scrollToSection('home')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => scrollToSection('programas')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Programas
               </button>
               <button 
                 onClick={() => scrollToSection('instalacoes')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Instalações
               </button>
               <button 
                 onClick={() => scrollToSection('videos')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Vídeos
               </button>
               <button 
                 onClick={() => scrollToSection('contato')} 
-                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm"
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Contacto
               </button>
             </nav>
 
-            {/* CTA Principal - responsivo */}
-            <div className="hidden md:block">
+            {/* CTA Principal - com espaçamento melhorado */}
+            <div className="hidden md:block flex-shrink-0 ml-4 lg:ml-6">
               <Button 
                 onClick={() => scrollToSection('contato')}
-                className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-4 lg:px-8 py-2 lg:py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm lg:text-base"
+                className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-4 lg:px-6 xl:px-8 py-2 lg:py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm lg:text-base whitespace-nowrap"
               >
                 Matricular
               </Button>
             </div>
 
-            {/* Menu Mobile Toggle */}
+            {/* Menu Mobile Toggle - com espaçamento adequado */}
             <button
-              className="md:hidden text-white z-dropdown relative p-2"
+              className="md:hidden text-white z-dropdown relative p-2 ml-4 flex-shrink-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
             >

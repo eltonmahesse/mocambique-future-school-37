@@ -199,19 +199,48 @@
     }
   }
 
-  /* Tablet optimizations */
+  /* Tablet optimizations - Melhorado */
   @media (min-width: 768px) and (max-width: 1023px) {
     .container {
       @apply px-6;
       max-width: calc(100vw - 3rem);
     }
+    
+    /* Melhor espaçamento para navegação tablet */
+    nav button {
+      min-width: fit-content;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
 
-  /* Desktop optimizations */
+  /* Desktop optimizations - Melhorado */
   @media (min-width: 1024px) {
     .container {
       @apply px-8;
     }
+    
+    /* Espaçamento otimizado para desktop */
+    nav button {
+      min-width: fit-content;
+      white-space: nowrap;
+    }
+  }
+
+  /* Header específico - melhor alinhamento */
+  header nav {
+    @apply items-center;
+  }
+  
+  header nav button {
+    @apply flex-shrink-0;
+    min-width: fit-content;
+  }
+  
+  /* Logo sempre bem posicionada */
+  header .logo-container {
+    @apply flex items-center flex-shrink-0;
+    min-width: fit-content;
   }
 }
 
@@ -274,6 +303,24 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+
+  /* Utilidades para melhor alinhamento de navegação */
+  .nav-item {
+    @apply flex-shrink-0 whitespace-nowrap;
+  }
+  
+  .nav-spacing {
+    @apply px-2 md:px-3 lg:px-4;
+  }
+  
+  /* Melhor controle de flex items */
+  .flex-balanced {
+    @apply flex items-center justify-between;
+  }
+  
+  .flex-centered {
+    @apply flex items-center justify-center;
+  }
 }
 
 /* Ensure no element breaks layout */
@@ -286,6 +333,20 @@
 section, div, article, main {
   max-width: 100%;
   overflow-wrap: break-word;
+}
+
+/* Prevent navigation items from breaking */
+nav button, nav a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Ensure proper header layout */
+header .container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 /* Smooth animations */
