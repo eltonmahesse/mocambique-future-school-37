@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-32 pb-16">
+    <section id="home" className="relative h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden">
       {/* Background Pattern - minimalista */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -31,8 +31,8 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 max-w-6xl w-full relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 max-w-6xl w-full relative z-10 pt-32 pb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
           {/* Conteúdo Principal - simplificado e focado */}
           <div className="text-white text-center lg:text-left space-y-8">
             

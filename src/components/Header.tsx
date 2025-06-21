@@ -44,7 +44,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Menu Principal - expandido */}
+      {/* Menu Principal - ajustado para mostrar links apenas em desktop */}
       <div className="bg-green-medium">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between py-4">
@@ -56,8 +56,8 @@ const Header = () => {
               <span className="text-white font-poppins font-bold text-xl">Colégio Pércia</span>
             </div>
 
-            {/* Menu Desktop - expandido com novas seções */}
-            <nav className="hidden lg:flex items-center space-x-6">
+            {/* Menu Desktop - visível apenas em telas grandes (xl e acima) */}
+            <nav className="hidden xl:flex items-center space-x-6">
               <button 
                 onClick={() => scrollToSection('home')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium"
@@ -96,8 +96,8 @@ const Header = () => {
               </button>
             </nav>
 
-            {/* CTA Principal */}
-            <div className="hidden lg:block">
+            {/* CTA Principal - visível apenas em desktop */}
+            <div className="hidden xl:block">
               <Button 
                 onClick={() => scrollToSection('contato')}
                 className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
@@ -106,9 +106,9 @@ const Header = () => {
               </Button>
             </div>
 
-            {/* Menu Mobile Toggle */}
+            {/* Menu Mobile Toggle - visível em tablets e mobile */}
             <button
-              className="lg:hidden text-white z-50 relative p-2"
+              className="xl:hidden text-white z-50 relative p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -116,9 +116,9 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Menu Mobile */}
+        {/* Menu Mobile - aparece em tablets e mobile */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-green-dark border-t border-green-medium">
+          <div className="xl:hidden bg-green-dark border-t border-green-medium">
             <nav className="py-4 space-y-1">
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Início</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Sobre Nós</button>
