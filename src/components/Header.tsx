@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -17,7 +16,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 shadow-lg">
       {/* Faixa Superior - mais limpa */}
-      <div className="bg-green-dark text-white py-2 hidden md:block">
+      <div className="bg-green-dark text-white py-2 hidden lg:block">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-6">
@@ -56,8 +55,36 @@ const Header = () => {
               <span className="text-white font-poppins font-bold text-xl">Colégio Pércia</span>
             </div>
 
-            {/* Menu Desktop/Tablet - visível em md e acima */}
-            <nav className="hidden md:flex items-center space-x-6">
+            {/* Menu Tablet - links reduzidos, visível apenas em tablets */}
+            <nav className="hidden md:flex lg:hidden items-center space-x-6">
+              <button 
+                onClick={() => scrollToSection('home')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+              >
+                Início
+              </button>
+              <button 
+                onClick={() => scrollToSection('programas')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+              >
+                Programas
+              </button>
+              <button 
+                onClick={() => scrollToSection('instalacoes')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+              >
+                Instalações
+              </button>
+              <button 
+                onClick={() => scrollToSection('contato')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium"
+              >
+                Contacto
+              </button>
+            </nav>
+
+            {/* Menu Desktop - todos os links, visível apenas em desktop */}
+            <nav className="hidden lg:flex items-center space-x-6">
               <button 
                 onClick={() => scrollToSection('home')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium"
