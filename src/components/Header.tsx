@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -117,6 +116,12 @@ const Header = () => {
                 Programas
               </button>
               <button 
+                onClick={() => scrollToSection('localizacao')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
+              >
+                Localização
+              </button>
+              <button 
                 onClick={() => scrollToSection('contato')} 
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
               >
@@ -143,6 +148,12 @@ const Header = () => {
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Programas
+              </button>
+              <button 
+                onClick={() => scrollToSection('localizacao')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
+              >
+                Local
               </button>
               <button 
                 onClick={() => scrollToSection('contato')} 
@@ -180,6 +191,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Início</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Sobre Nós</button>
               <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Programas</button>
+              <button onClick={() => scrollToSection('localizacao')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Localização</button>
               <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Contacto</button>
               
               <div className="px-6 py-4">

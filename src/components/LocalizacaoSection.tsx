@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const LocalizacaoSection = () => {
   const openInMaps = () => {
-    window.open('https://maps.app.goo.gl/GPUJfnTm2qzTJiCt5', '_blank');
+    window.open('https://g.co/kgs/nD3E5Jd', '_blank');
   };
 
   return (
@@ -12,7 +12,7 @@ const LocalizacaoSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-4">
-            Nossa <span className="text-green-primary">Localização</span>
+            Como <span className="text-green-primary">Chegar</span>
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
             Encontre-nos facilmente e venha conhecer nossa estrutura
@@ -24,7 +24,7 @@ const LocalizacaoSection = () => {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d58101.334848178676!2d32.321!3d-25.966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x1ee69b5fdf6069b7%3A0x8e5f7b65e4b5d7a2!2sPrimeira%20Rotunda%20da%20Circular%2C%20Matola!3m2!1d-25.9665!2d32.3208!4m5!1s0x1ee69b5f4b5f0a8b%3A0x1b5f4b5f4b5f4b5f!2s6H42%2B8F%2C%20Maputo!3m2!1d-25.944!2d32.351!5e0!3m2!1spt!2smz!4v1640000000000!5m2!1spt!2smz"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.123456789!2d32.351234!3d-25.944567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69b5f4b5f0a8b%3A0x1b5f4b5f4b5f4b5f!2sCol%C3%A9gio%20P%C3%A9rcia!5e0!3m2!1spt!2smz!4v1640000000000!5m2!1spt!2smz"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -44,8 +44,8 @@ const LocalizacaoSection = () => {
                 <h3 className="font-poppins font-bold text-xl">Endereço</h3>
               </div>
               <p className="font-poppins text-green-100 mb-6">
-                6H42+8F, Maputo<br />
-                Próximo à Primeira Rotunda da Circular, Matola
+                Matola, Intaka 2<br />
+                Moçambique
               </p>
               
               <Button
@@ -68,13 +68,11 @@ const LocalizacaoSection = () => {
               </p>
               
               <a
-                href="https://wa.me/258123456789"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:858681368"
                 className="block w-full bg-white text-green-primary hover:bg-gray-100 font-poppins font-semibold py-3 rounded-xl transition-all duration-300 text-center"
               >
                 <Phone className="inline mr-2" size={18} />
-                +258 12 345 6789
+                858 681 368
               </a>
             </div>
           </div>
@@ -95,15 +93,15 @@ const LocalizacaoSection = () => {
               <MapPin className="text-white" size={24} />
             </div>
             <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Bem Localizado</h4>
-            <p className="font-poppins text-gray-600">Próximo a pontos de referência conhecidos na região</p>
+            <p className="font-poppins text-gray-600">Em Matola, região conhecida e de fácil referência</p>
           </div>
 
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
             <div className="bg-red-bright w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Phone className="text-white" size={24} />
             </div>
-            <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Suporte 24h</h4>
-            <p className="font-poppins text-gray-600">Estamos sempre disponíveis para ajudar com informações</p>
+            <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Apoio Personalizado</h4>
+            <p className="font-poppins text-gray-600">Estamos sempre disponíveis para ajudar com informações de localização</p>
           </div>
         </div>
       </div>

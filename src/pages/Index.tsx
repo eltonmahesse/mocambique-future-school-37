@@ -9,6 +9,7 @@ import TabelaPrecos2026Section from '@/components/TabelaPrecos2026Section';
 import VideoInstitucionalSection from '@/components/VideoInstitucionalSection';
 import DepoimentosSection from '@/components/DepoimentosSection';
 import CTASection from '@/components/CTASection';
+import LocalizacaoSection from '@/components/LocalizacaoSection';
 import ContatoSection from '@/components/ContatoSection';
 import Footer from '@/components/Footer';
 
@@ -25,6 +26,7 @@ const Index = () => {
       <VideoInstitucionalSection />
       <DepoimentosSection />
       <CTASection />
+      <LocalizacaoSection />
       <ContatoSection />
       <Footer />
     </div>
