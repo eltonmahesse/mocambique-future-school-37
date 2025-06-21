@@ -38,7 +38,7 @@ const ContatoSection = () => {
 
     toast({
       title: "Solicitação enviada!",
-      description: "Entraremos em contato em até 2 horas para agendar uma visita.",
+      description: "Entraremos em contacto em até 2 horas.",
     });
 
     setFormData({
@@ -55,10 +55,10 @@ const ContatoSection = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-4">
-            <span className="text-green-primary">Agende</span> uma Visita
+            <span className="text-green-primary">Contactar</span>
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
-            Conheça pessoalmente nossas instalações e tire todas as suas dúvidas
+            Entre em contacto connosco e esclareça todas as suas dúvidas sobre matrículas e programas educacionais
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const ContatoSection = () => {
           <div className="bg-white rounded-3xl p-8 shadow-xl">
             <div className="mb-6">
               <h3 className="font-poppins font-bold text-xl text-gray-800 mb-2">
-                Solicite uma Visita Gratuita
+                Envie-nos uma Mensagem
               </h3>
               <p className="text-gray-600">Resposta garantida em até 2 horas</p>
             </div>
@@ -137,15 +137,15 @@ const ContatoSection = () => {
 
               <div>
                 <label className="block font-poppins font-medium text-gray-700 mb-2">
-                  Mensagem (Opcional)
+                  Mensagem
                 </label>
                 <Textarea
                   name="mensagem"
                   value={formData.mensagem}
                   onChange={handleInputChange}
-                  rows={3}
+                  rows={4}
                   className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary resize-none"
-                  placeholder="Conte-nos sobre seu interesse..."
+                  placeholder="Como podemos ajudá-lo? Perguntas sobre matrículas, programas educacionais, horários..."
                 />
               </div>
 
@@ -153,7 +153,7 @@ const ContatoSection = () => {
                 type="submit"
                 className="w-full bg-green-primary hover:bg-green-dark text-white font-poppins font-bold py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105"
               >
-                Agendar Visita Gratuita
+                Enviar Mensagem
               </Button>
             </form>
           </div>
@@ -219,6 +219,19 @@ const ContatoSection = () => {
                   <MessageCircle size={20} />
                   <span>WhatsApp Directo</span>
                 </a>
+              </div>
+            </div>
+
+            {/* Informações Adicionais */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg">
+              <h4 className="font-poppins font-bold text-lg text-gray-800 mb-4">
+                Precisa de Informações Rápidas?
+              </h4>
+              <div className="space-y-3 text-sm text-gray-600">
+                <p>• <strong>Matrículas abertas</strong> para o ano lectivo 2026</p>
+                <p>• <strong>Visitas às instalações</strong> de segunda a sexta</p>
+                <p>• <strong>Documentação necessária</strong> para matrícula disponível</p>
+                <p>• <strong>Programas educacionais</strong> do pré-escolar ao ensino médio</p>
               </div>
             </div>
           </div>

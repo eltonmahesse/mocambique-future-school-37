@@ -41,7 +41,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Sub-header Tablet - Todas as informações sem contacto e sem último ícone */}
+      {/* Sub-header Tablet - Todas as informações sem contacto */}
       <div className="bg-green-dark text-white py-2 hidden md:block lg:hidden">
         <div className="container">
           <div className="flex items-center justify-between text-sm">
@@ -116,6 +116,12 @@ const Header = () => {
               >
                 Programas
               </button>
+              <button 
+                onClick={() => scrollToSection('contato')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-base whitespace-nowrap"
+              >
+                Contacto
+              </button>
             </nav>
 
             {/* Menu Tablet - com links reduzidos */}
@@ -137,6 +143,12 @@ const Header = () => {
                 className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
               >
                 Programas
+              </button>
+              <button 
+                onClick={() => scrollToSection('contato')} 
+                className="text-white hover:text-green-light transition-colors font-poppins font-medium text-sm whitespace-nowrap px-1"
+              >
+                Contacto
               </button>
             </nav>
 
@@ -168,6 +180,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('home')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Início</button>
               <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Sobre Nós</button>
               <button onClick={() => scrollToSection('programas')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Programas</button>
+              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-6 py-3 text-white hover:bg-green-medium font-poppins transition-colors">Contacto</button>
               
               <div className="px-6 py-4">
                 <Button 
