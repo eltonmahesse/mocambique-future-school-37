@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -129,7 +130,7 @@ const Header = () => {
                 onClick={() => scrollToSection('contato')}
                 className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
               >
-                Matricular Agora
+                Matricular
               </Button>
             </div>
 
@@ -159,7 +160,7 @@ const Header = () => {
                   onClick={() => scrollToSection('contato')}
                   className="w-full bg-red-bright hover:bg-red-600 text-white font-poppins font-bold py-3 rounded-full"
                 >
-                  Matricular Agora
+                  Matricular
                 </Button>
               </div>
             </nav>

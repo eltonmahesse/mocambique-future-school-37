@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Star, Users } from 'lucide-react';
+import { Star, Users } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -17,18 +17,6 @@ const HeroSection = () => {
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 60%)`
         }}></div>
-      </div>
-
-      {/* Bottom wave - ajustado para eliminar linha verde */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
-        <svg 
-          viewBox="0 0 1200 120" 
-          className="w-full h-20 fill-white block" 
-          preserveAspectRatio="none"
-          style={{ transform: 'translateY(1px)' }}
-        >
-          <path d="M0,120 L0,80 C300,60 600,40 1200,80 L1200,120 Z" />
-        </svg>
       </div>
 
       <div className="container mx-auto px-4 max-w-6xl w-full relative z-10 pt-20 md:pt-32 pb-16">
@@ -76,18 +64,8 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* CTA Principal - mais proeminente */}
+            {/* Informação sobre matrícula */}
             <div className="space-y-4">
-              <Button 
-                onClick={() => scrollToSection('contato')}
-                className="group relative bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-8 md:px-10 py-3 md:py-4 rounded-2xl text-base md:text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl w-full lg:w-auto"
-              >
-                <span className="flex items-center justify-center space-x-3">
-                  <span>Garantir Vaga Agora</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </Button>
-              
               <p className="text-green-100 text-sm">
                 <Star className="w-4 h-4 inline text-yellow-400 mr-1" />
                 Vagas limitadas para 2024 | Matrícula gratuita até 31 de Janeiro
