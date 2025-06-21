@@ -88,15 +88,6 @@
     @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-  }
-
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Prevent horizontal overflow globally - CORRIGIDO */
-  body, html {
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
@@ -104,25 +95,82 @@
     padding: 0;
   }
 
-  /* Ensure all sections respect container boundaries - CORRIGIDO */
-  section {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
-    overflow-x: hidden;
-    position: relative;
   }
 
-  /* Responsive containers with proper overflow control - MELHORADO */
+  /* Sistema de Z-Index Padronizado */
+  .z-header { z-index: 50; }
+  .z-sub-header { z-index: 40; }
+  .z-modal { z-index: 100; }
+  .z-overlay { z-index: 90; }
+  .z-dropdown { z-index: 60; }
+
+  /* Container System - Padronizado */
   .container {
-    @apply max-w-7xl mx-auto px-4;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
     width: 100%;
     box-sizing: border-box;
   }
 
-  /* Responsive images - MELHORADO */
+  /* Section Spacing System - Padronizado */
+  .section-spacing {
+    @apply py-8 md:py-12 lg:py-16;
+  }
+
+  .section-spacing-large {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Responsive Text System */
+  .text-responsive-sm {
+    @apply text-sm md:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-base md:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  .text-responsive-2xl {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  /* Card System - Altura Uniforme */
+  .card-uniform {
+    @apply h-full flex flex-col;
+  }
+
+  .card-content {
+    @apply flex-grow;
+  }
+
+  /* Grid System Responsivo */
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8;
+  }
+
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8;
+  }
+
+  .grid-responsive-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6;
+  }
+
+  /* Improved Image Responsiveness */
   img {
-    @apply max-w-full h-auto;
-    display: block;
+    @apply max-w-full h-auto block;
   }
 
   /* Better text rendering */
@@ -131,35 +179,44 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Fix for mobile viewport issues - CORRIGIDO */
-  @media (max-width: 768px) {
+  /* Mobile optimizations */
+  @media (max-width: 767px) {
     body {
       font-size: 16px; /* Prevent zoom on iOS */
     }
     
     .container {
-      @apply px-3;
-      max-width: calc(100vw - 1.5rem);
+      @apply px-4;
+      max-width: calc(100vw - 2rem);
     }
 
-    /* Prevent elements from breaking out of containers */
+    /* Prevent horizontal scroll on mobile */
     section {
       padding-left: 0;
       padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
-  /* Improved responsive breakpoints */
-  @media (max-width: 640px) {
+  /* Tablet optimizations */
+  @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-      @apply px-4;
-      max-width: calc(100vw - 2rem);
+      @apply px-6;
+      max-width: calc(100vw - 3rem);
+    }
+  }
+
+  /* Desktop optimizations */
+  @media (min-width: 1024px) {
+    .container {
+      @apply px-8;
     }
   }
 }
 
 @layer utilities {
-  /* Enhanced responsive utilities - MELHORADOS */
+  /* Enhanced responsive utilities */
   .text-responsive {
     @apply text-sm md:text-base lg:text-lg;
   }
@@ -172,25 +229,21 @@
     @apply text-xl md:text-2xl lg:text-3xl;
   }
 
-  /* Better spacing utilities - OTIMIZADOS */
+  /* Better spacing utilities */
   .section-padding {
     @apply py-8 md:py-12 lg:py-16;
   }
 
   .card-padding {
-    @apply p-3 md:p-4 lg:p-6;
+    @apply p-4 md:p-6;
   }
 
-  /* Enhanced grid utilities - CORRIGIDOS */
+  /* Enhanced grid utilities */
   .grid-responsive {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6;
   }
 
-  .grid-responsive-4 {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6;
-  }
-
-  /* Utility to prevent content overflow - NOVO */
+  /* Utility to prevent content overflow */
   .safe-area {
     width: 100%;
     max-width: 100%;
@@ -199,7 +252,7 @@
     overflow-wrap: break-word;
   }
 
-  /* Mobile-first responsive text sizes - OTIMIZADOS */
+  /* Mobile-first responsive text sizes */
   .text-mobile-friendly {
     @apply text-sm sm:text-base md:text-lg;
   }
@@ -208,26 +261,19 @@
     @apply text-base sm:text-lg md:text-xl lg:text-2xl;
   }
 
-  /* Prevent content breaking out of containers */
-  .content-safe {
-    max-width: 100%;
-    overflow: hidden;
-    word-break: break-word;
-  }
-
   /* Better button responsiveness */
   .btn-responsive {
     @apply px-4 py-2 md:px-6 md:py-3 text-sm md:text-base;
   }
-}
 
-/* Fix specific overflow issues - MELHORADOS */
-.overflow-safe {
-  overflow-x: hidden;
-  max-width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  /* Aspect ratio utilities */
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
 }
 
 /* Ensure no element breaks layout */
@@ -240,4 +286,11 @@
 section, div, article, main {
   max-width: 100%;
   overflow-wrap: break-word;
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
 }

@@ -11,18 +11,18 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden">
-      {/* Background Pattern - minimalista */}
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-24 md:pt-32">
+      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 60%)`
         }}></div>
       </div>
 
-      <div className="container mx-auto px-4 max-w-6xl w-full relative z-10 pt-20 md:pt-32 pb-16">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center h-full">
-          {/* Conteúdo Principal - simplificado e focado */}
-          <div className="text-white text-center lg:text-left space-y-6 md:space-y-8">
+      <div className="container relative z-10 py-8 md:py-16">
+        <div className="grid-responsive-2 items-center min-h-[70vh] md:min-h-[80vh]">
+          {/* Conteúdo Principal */}
+          <div className="text-white text-center lg:text-left space-y-6 md:space-y-8 order-2 lg:order-1">
             
             {/* Social Proof Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 text-sm">
@@ -34,31 +34,31 @@ const HeroSection = () => {
               <span className="text-white font-medium">+200 famílias confiam em nós</span>
             </div>
             
-            {/* Título Principal - mais direto */}
+            {/* Título Principal */}
             <div className="space-y-4">
-              <h1 className="font-poppins font-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+              <h1 className="font-poppins font-black text-responsive-2xl xl:text-5xl leading-tight">
                 O Futuro do seu{' '}
                 <span className="text-green-light">Filho</span>{' '}
                 Começa Aqui
               </h1>
-              <p className="font-poppins text-lg md:text-xl lg:text-2xl text-green-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="font-poppins text-responsive-lg text-green-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 Educação de qualidade do 1º ao 12º ano em Moçambique
               </p>
             </div>
             
-            {/* Proposta de Valor - clara e concisa */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/20">
+            {/* Proposta de Valor */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl card-padding border border-white/20">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-xl md:text-2xl font-bold text-green-light">15+</div>
+                  <div className="text-responsive-lg font-bold text-green-light">15+</div>
                   <div className="text-xs md:text-sm text-white/80">Anos de experiência</div>
                 </div>
                 <div>
-                  <div className="text-xl md:text-2xl font-bold text-green-light">98%</div>
+                  <div className="text-responsive-lg font-bold text-green-light">98%</div>
                   <div className="text-xs md:text-sm text-white/80">Taxa de aprovação</div>
                 </div>
                 <div>
-                  <div className="text-xl md:text-2xl font-bold text-green-light">200+</div>
+                  <div className="text-responsive-lg font-bold text-green-light">200+</div>
                   <div className="text-xs md:text-sm text-white/80">Alunos matriculados</div>
                 </div>
               </div>
@@ -66,15 +66,15 @@ const HeroSection = () => {
 
             {/* Informação sobre matrícula */}
             <div className="space-y-4">
-              <p className="text-green-100 text-sm">
+              <p className="text-green-100 text-responsive-sm">
                 <Star className="w-4 h-4 inline text-yellow-400 mr-1" />
                 Vagas limitadas para 2024 | Matrícula gratuita até 31 de Janeiro
               </p>
             </div>
           </div>
 
-          {/* Imagem Principal - mais limpa */}
-          <div className="flex justify-center">
+          {/* Imagem Principal */}
+          <div className="flex justify-center order-1 lg:order-2">
             <div className="relative group max-w-md w-full">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img

@@ -32,24 +32,24 @@ const ProgramasSection = () => {
   ];
 
   return (
-    <section id="programas" className="py-12 md:py-16 bg-gray-50">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section id="programas" className="section-spacing bg-gray-50">
+      <div className="container">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="font-poppins font-bold text-2xl md:text-3xl lg:text-4xl text-gray-800 mb-4">
+          <h2 className="font-poppins font-bold text-responsive-2xl text-gray-800 mb-4">
             Nossos <span className="text-green-primary">Programas</span>
           </h2>
-          <p className="font-poppins text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="font-poppins text-responsive-lg text-gray-600 max-w-3xl mx-auto">
             Oferecemos programas educacionais completos para todas as fases do desenvolvimento
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid-responsive-4">
           {programas.map((programa, index) => (
             <div
               key={index}
               className="group hover:scale-105 transition-all duration-300"
             >
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
+              <div className="card-uniform bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                 {/* Imagem */}
                 <div className="relative h-48 overflow-hidden flex-shrink-0">
                   <img
@@ -63,12 +63,12 @@ const ProgramasSection = () => {
                 </div>
 
                 {/* Conteúdo */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="font-poppins font-bold text-lg md:text-xl text-gray-800 mb-3">
+                <div className="card-padding card-content">
+                  <h3 className="font-poppins font-bold text-responsive-base text-gray-800 mb-3">
                     {programa.titulo}
                   </h3>
                   
-                  <p className="font-poppins text-sm md:text-base text-gray-600 leading-relaxed mb-4 flex-grow">
+                  <p className="font-poppins text-responsive-sm text-gray-600 leading-relaxed mb-4 flex-grow">
                     {programa.descricao}
                   </p>
 

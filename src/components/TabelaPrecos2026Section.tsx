@@ -56,14 +56,14 @@ const TabelaPrecos2026Section = () => {
   ];
 
   return (
-    <section id="precos-2026" className="py-20 bg-white">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section id="precos-2026" className="section-spacing-large bg-white">
+      <div className="container">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-6">
+          <h2 className="font-poppins font-bold text-responsive-2xl text-gray-800 mb-6">
             Tabela de Preços <span className="text-green-primary">2026</span>
           </h2>
-          <p className="font-poppins text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="font-poppins text-responsive-lg text-gray-600 max-w-3xl mx-auto mb-8">
             Investimento transparente na educação de qualidade do seu filho. Valores justos para uma formação completa e diferenciada.
           </p>
           
@@ -78,7 +78,7 @@ const TabelaPrecos2026Section = () => {
         </div>
 
         {/* Grid de Preços */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid-responsive-3 mb-16">
           {precos2026.map((preco, index) => (
             <PriceCard2026
               key={index}
@@ -92,15 +92,15 @@ const TabelaPrecos2026Section = () => {
         </div>
 
         {/* Observações Complementares */}
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8">
+        <div className="bg-gray-50 border border-gray-200 rounded-2xl card-padding">
           <div className="flex items-center space-x-3 mb-6">
             <Users className="text-green-primary" size={28} />
-            <h3 className="font-poppins font-bold text-xl text-gray-800">
+            <h3 className="font-poppins font-bold text-responsive-lg text-gray-800">
               Informações Importantes
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid-responsive-2">
             <div>
               <h4 className="font-poppins font-semibold text-green-dark mb-4">📋 O que está incluído:</h4>
               <ul className="space-y-2 font-poppins text-gray-700">
