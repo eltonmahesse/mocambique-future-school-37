@@ -57,23 +57,15 @@ const LocalizacaoSection = () => {
               </Button>
             </div>
 
-            <div className="bg-green-primary rounded-3xl p-8 text-white">
+            <div className="bg-white rounded-3xl p-8 shadow-lg">
               <div className="flex items-center mb-4">
-                <Phone className="text-white mr-3" size={24} />
-                <h3 className="font-poppins font-bold text-xl">Contato Rápido</h3>
+                <Phone className="text-green-dark mr-3" size={24} />
+                <h3 className="font-poppins font-bold text-xl text-gray-800">Informações</h3>
               </div>
-              <p className="font-poppins text-green-100 mb-6">
-                Precisa de ajuda para chegar?<br />
-                Ligue para nós!
+              <p className="font-poppins text-gray-600 mb-4">
+                Matola, Intaka 2, Moçambique<br />
+                Telefone: 858 681 368
               </p>
-              
-              <a
-                href="tel:858681368"
-                className="block w-full bg-white text-green-primary hover:bg-gray-100 font-poppins font-semibold py-3 rounded-xl transition-all duration-300 text-center"
-              >
-                <Phone className="inline mr-2" size={18} />
-                858 681 368
-              </a>
             </div>
           </div>
         </div>

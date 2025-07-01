@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Phone, Clock, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 const CTASection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,11 +15,6 @@ const CTASection = () => {
       <div className="container">
         <div className="bg-white rounded-3xl card-padding shadow-2xl">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center space-x-2 bg-red-bright/10 text-red-bright rounded-full px-4 py-2 text-sm font-semibold mb-4">
-              <Clock size={16} />
-              <span>Vagas Limitadas - Ação Rápida Necessária</span>
-            </div>
-            
             <h2 className="font-poppins font-bold text-responsive-2xl text-gray-800 mb-4">
               Garanta o Futuro do Seu Filho
             </h2>
@@ -37,28 +32,13 @@ const CTASection = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <div className="flex justify-center">
             <Button 
               onClick={() => scrollToSection('contato')}
-              className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-6 md:px-10 py-3 md:py-4 rounded-2xl text-responsive-base transition-all duration-300 transform hover:scale-105 shadow-lg w-full md:w-auto"
+              className="bg-red-bright hover:bg-red-600 text-white font-poppins font-bold px-6 md:px-10 py-3 md:py-4 rounded-2xl text-responsive-base transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              Matricular Agora - Vaga Garantida
+              Matricular Agora
             </Button>
-            
-            <div className="flex items-center space-x-4 bg-gray-50 rounded-2xl p-4 w-full md:w-auto">
-              <div className="bg-green-primary p-3 rounded-full">
-                <Phone className="text-white" size={20} />
-              </div>
-              <div className="text-left">
-                <p className="font-poppins text-sm text-gray-600">Ligue agora</p>
-                <a 
-                  href="tel:858681368" 
-                  className="font-poppins font-bold text-responsive-base text-gray-800 hover:text-green-primary transition-colors"
-                >
-                  858 681 368
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
