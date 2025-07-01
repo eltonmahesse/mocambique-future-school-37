@@ -33,7 +33,7 @@ const TransporteSection = () => {
             </div>
             <h3 className="font-poppins font-bold text-lg mb-3">Máxima Segurança</h3>
             <p className="font-poppins text-green-100 text-sm">
-              Veículos inspecionados e motoristas experientes com licenças válidas.
+              Veículos inspeccionados e motoristas experientes com licenças válidas.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ const TransporteSection = () => {
             </div>
             <h3 className="font-poppins font-bold text-lg mb-3">Pontualidade</h3>
             <p className="font-poppins text-green-100 text-sm">
-              Horários rigorosamente cumpridos com rotas otimizadas.
+              Horários rigorosamente cumpridos com rotas optimizadas.
             </p>
           </div>
 

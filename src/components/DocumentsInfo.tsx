@@ -16,7 +16,7 @@ const DocumentsInfo = () => {
             </div>
             <div className="flex items-center space-x-3">
               <Check className="text-green-light" size={20} />
-              <span className="font-poppins text-white">3 Fotos tipo passe</span>
+              <span className="font-poppins text-white">3 Fotografias tipo passe</span>
             </div>
             <div className="flex items-center space-x-3">
               <FileText className="text-green-light" size={20} />

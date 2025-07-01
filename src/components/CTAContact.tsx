@@ -10,7 +10,7 @@ const CTAContact = ({ onMatriculaClick }: CTAContactProps) => {
   return (
     <div className="text-center bg-gray-50 rounded-2xl p-8">
       <h3 className="font-poppins font-bold text-xl md:text-2xl text-gray-800 mb-4">
-        Garante já a vaga do seu filho!
+        Garante já a vaga do vosso filho!
       </h3>
       <p className="font-poppins text-gray-600 mb-6 max-w-2xl mx-auto">
         Vagas limitadas! Entre em contacto connosco para mais informações sobre o processo de matrícula.

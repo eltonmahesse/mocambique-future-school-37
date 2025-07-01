@@ -22,7 +22,7 @@ const Footer = () => {
               <span className="font-poppins font-bold text-2xl">Colégio Pércia</span>
             </div>
             <p className="font-poppins text-green-100 leading-relaxed mb-6">
-              Formamos mentes para transformar o futuro. Educação de qualidade em Moçambique há mais de 15 anos.
+              Formamos mentes para transformar o futuro. Educação de qualidade em Moçambique.
             </p>
             <div className="flex space-x-4">
               <a href="https://wa.me/258123456789" target="_blank" rel="noopener noreferrer" className="bg-green-primary p-3 rounded-full hover:bg-green-medium transition-colors">
@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <button onClick={() => scrollToSection('home')} className="font-poppins text-green-100 hover:text-white transition-colors">
-                  Home
+                  Início
                 </button>
               </li>
               <li>
@@ -73,13 +73,13 @@ const Footer = () => {
               </li>
               <li>
                 <button onClick={() => scrollToSection('contato')} className="font-poppins text-green-100 hover:text-white transition-colors">
-                  Contato
+                  Contacto
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Contatos */}
+          {/* Contactos */}
           <div>
             <h3 className="font-poppins font-bold text-xl mb-4">Contactos</h3>
             <div className="space-y-4">
@@ -106,7 +106,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="text-green-primary mt-1" size={20} />
                 <div>
-                  <p className="font-poppins font-semibold">Endereço</p>
+                  <p className="font-poppins font-semibold">Morada</p>
                   <p className="font-poppins text-green-100">
                     6H42+8F, Maputo<br />
                     Próximo à Primeira Rotunda da Circular, Matola

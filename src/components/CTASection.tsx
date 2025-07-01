@@ -16,7 +16,7 @@ const CTASection = () => {
         <div className="bg-white rounded-3xl card-padding shadow-2xl">
           <div className="text-center mb-8">
             <h2 className="font-poppins font-bold text-responsive-2xl text-gray-800 mb-4">
-              Garanta o Futuro do Seu Filho
+              Garanta o Futuro do Vosso Filho
             </h2>
             
             <p className="font-poppins text-responsive-lg text-gray-600 mb-8 max-w-2xl mx-auto">

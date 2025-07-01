@@ -9,21 +9,21 @@ const DepoimentosSection = () => {
     {
       nome: 'Maria Santos',
       foto: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=150&h=150&fit=crop&crop=face',
-      depoimento: 'O Colégio Pércia transformou a vida do meu filho. Ele desenvolveu não apenas conhecimento acadêmico, mas também valores importantes para a vida. A equipe é excepcional!',
+      depoimento: 'O Colégio Pércia transformou a vida do meu filho. Ele desenvolveu não apenas conhecimento académico, mas também valores importantes para a vida. A equipa é excepcional!',
       filho: 'João, 12 anos',
       cor: 'bg-red-bright'
     },
     {
       nome: 'Carlos Muchanga',
       foto: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=150&h=150&fit=crop&crop=face',
-      depoimento: 'Excelente qualidade de ensino e infraestrutura moderna. Minha filha se sente motivada a aprender todos os dias. Recomendo para todas as famílias que buscam o melhor.',
+      depoimento: 'Excelente qualidade de ensino e infraestrutura moderna. A minha filha sente-se motivada a aprender todos os dias. Recomendo a todas as famílias que procuram o melhor.',
       filho: 'Ana, 15 anos',
       cor: 'bg-green-primary'
     },
     {
       nome: 'Fatima Abdul',
       foto: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=150&h=150&fit=crop&crop=face',
-      depoimento: 'O acompanhamento personalizado e o carinho com que tratam cada aluno faz toda a diferença. Meu filho melhorou muito suas notas e sua autoestima.',
+      depoimento: 'O acompanhamento personalizado e o carinho com que tratam cada aluno faz toda a diferença. O meu filho melhorou muito as suas notas e a sua autoestima.',
       filho: 'Pedro, 9 anos',
       cor: 'bg-green-dark'
     }

@@ -37,7 +37,7 @@ const HeroSection = () => {
             {/* Título Principal */}
             <div className="space-y-4">
               <h1 className="font-poppins font-black text-responsive-2xl xl:text-5xl leading-tight">
-                O Futuro do seu{' '}
+                O Futuro do Vosso{' '}
                 <span className="text-green-light">Filho</span>{' '}
                 Começa Aqui
               </h1>

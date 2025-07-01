@@ -15,7 +15,7 @@ const LocalizacaoSection = () => {
             Como <span className="text-green-primary">Chegar</span>
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
-            Encontre-nos facilmente e venha conhecer nossa estrutura
+            Encontre-nos facilmente e venha conhecer a nossa estrutura
           </p>
         </div>
 
@@ -41,7 +41,7 @@ const LocalizacaoSection = () => {
             <div className="bg-green-dark rounded-3xl p-8 text-white">
               <div className="flex items-center mb-4">
                 <MapPin className="text-green-light mr-3" size={24} />
-                <h3 className="font-poppins font-bold text-xl">Endereço</h3>
+                <h3 className="font-poppins font-bold text-xl">Morada</h3>
               </div>
               <p className="font-poppins text-green-100 mb-6">
                 Matola, Intaka 2<br />
@@ -85,7 +85,7 @@ const LocalizacaoSection = () => {
               <MapPin className="text-white" size={24} />
             </div>
             <h4 className="font-poppins font-bold text-lg text-gray-800 mb-2">Bem Localizado</h4>
-            <p className="font-poppins text-gray-600">Em Matola, região conhecida e de fácil referência</p>
+            <p className="font-poppins text-gray-600">Na Matola, região conhecida e de fácil referência</p>
           </div>
 
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg">

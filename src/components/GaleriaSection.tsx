@@ -21,7 +21,7 @@ const GaleriaSection = () => {
     },
     {
       src: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop',
-      alt: 'Atividades extracurriculares'
+      alt: 'Actividades extracurriculares'
     },
     {
       src: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop',
@@ -42,10 +42,10 @@ const GaleriaSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-4">
-            Nossas <span className="text-green-primary">Instalações</span>
+            As Nossas <span className="text-green-primary">Instalações</span>
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
-            Conheça nossos espaços modernos e equipados para o melhor aprendizado
+            Conheça os nossos espaços modernos e equipados para a melhor aprendizagem
           </p>
         </div>
 
@@ -123,7 +123,7 @@ const GaleriaSection = () => {
             className="bg-green-primary hover:bg-green-medium text-white font-poppins font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
           >
             <Eye className="mr-2" size={20} />
-            Ver Todas as Fotos
+            Ver Todas as Fotografias
           </Button>
         </div>
       </div>

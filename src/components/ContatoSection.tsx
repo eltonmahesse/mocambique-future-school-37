@@ -56,7 +56,7 @@ const ContatoSection = () => {
             <span className="text-green-primary">Contactar</span>
           </h2>
           <p className="font-poppins text-lg text-gray-600 max-w-2xl mx-auto">
-            Entre em contacto connosco e esclareça todas as suas dúvidas sobre matrículas e programas educacionais
+            Entre em contacto connosco e esclareça todas as vossas dúvidas sobre matrículas e programas educacionais
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const ContatoSection = () => {
                     value={formData.nome}
                     onChange={handleInputChange}
                     className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary"
-                    placeholder="Seu nome completo"
+                    placeholder="O vosso nome completo"
                     required
                   />
                 </div>
@@ -113,7 +113,7 @@ const ContatoSection = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary"
-                  placeholder="seu@email.com"
+                  placeholder="o-vosso@email.com"
                 />
               </div>
 
@@ -127,7 +127,7 @@ const ContatoSection = () => {
                   onChange={handleInputChange}
                   rows={4}
                   className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary resize-none"
-                  placeholder="Como podemos ajudá-lo? Perguntas sobre matrículas, programas educacionais, horários..."
+                  placeholder="Como podemos ajudar-vos? Perguntas sobre matrículas, programas educacionais, horários..."
                 />
               </div>
 
@@ -140,7 +140,7 @@ const ContatoSection = () => {
             </form>
           </div>
 
-          {/* Informações de Contato */}
+          {/* Informações de Contacto */}
           <div className="space-y-8">
             <div className="bg-green-primary rounded-3xl p-8 text-white">
               <h3 className="font-poppins font-bold text-xl mb-6">Entre em Contacto</h3>

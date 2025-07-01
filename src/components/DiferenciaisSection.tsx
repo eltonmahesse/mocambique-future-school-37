@@ -6,13 +6,13 @@ const DiferenciaisSection = () => {
     {
       icon: Users,
       title: 'Professores Qualificados',
-      description: 'Equipe pedagógica experiente e dedicada ao desenvolvimento completo dos nossos alunos.',
+      description: 'Equipa pedagógica experiente e dedicada ao desenvolvimento completo dos nossos alunos.',
       color: 'bg-green-primary'
     },
     {
       icon: Building,
       title: 'Instalações de Qualidade',
-      description: 'Ambiente educacional bem equipado e adequado para proporcionar o melhor aprendizado.',
+      description: 'Ambiente educacional bem equipado e adequado para proporcionar a melhor aprendizagem.',
       color: 'bg-red-bright'
     },
     {
@@ -31,7 +31,7 @@ const DiferenciaisSection = () => {
             Por que Escolher o <span className="text-green-primary">Colégio Pércia</span>?
           </h2>
           <p className="font-poppins text-responsive-lg text-gray-600 max-w-2xl mx-auto">
-            Três pilares fundamentais que fazem a diferença na educação do seu filho
+            Três pilares fundamentais que fazem a diferença na educação do vosso filho
           </p>
         </div>
 

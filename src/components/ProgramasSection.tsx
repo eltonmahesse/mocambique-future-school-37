@@ -18,14 +18,14 @@ const ProgramasSection = () => {
     {
       titulo: 'Ensino Pré-Universitário',
       subtitulo: '10ª - 12ª Classe',
-      descricao: 'Preparação especializada para o ensino superior com orientação vocacional e acadêmica.',
+      descricao: 'Preparação especializada para o ensino superior com orientação vocacional e académica.',
       imagem: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
       cor: 'bg-green-primary'
     },
     {
       titulo: 'Reforço Escolar',
       subtitulo: 'Apoio Especializado',
-      descricao: 'Aulas de reforço com acompanhamento personalizado para melhor desempenho acadêmico.',
+      descricao: 'Aulas de reforço com acompanhamento personalizado para melhor desempenho académico.',
       imagem: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop',
       cor: 'bg-green-medium'
     }
@@ -36,7 +36,7 @@ const ProgramasSection = () => {
       <div className="container">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="font-poppins font-bold text-responsive-2xl text-gray-800 mb-4">
-            Nossos <span className="text-green-primary">Programas</span>
+            Os Nossos <span className="text-green-primary">Programas</span>
           </h2>
           <p className="font-poppins text-responsive-lg text-gray-600 max-w-3xl mx-auto">
             Oferecemos programas educacionais completos para todas as fases do desenvolvimento
