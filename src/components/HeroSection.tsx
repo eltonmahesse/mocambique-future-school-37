@@ -42,17 +42,13 @@ const HeroSection = () => {
                 Começa Aqui
               </h1>
               <p className="font-poppins text-responsive-lg text-green-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Educação de qualidade do 1º ao 12º ano em Moçambique
+                Educação de qualidade da 1ª à 12ª Classe
               </p>
             </div>
             
             {/* Proposta de Valor */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl card-padding border border-white/20">
               <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="text-responsive-lg font-bold text-green-light">15+</div>
-                  <div className="text-xs md:text-sm text-white/80">Anos de experiência</div>
-                </div>
                 <div>
                   <div className="text-responsive-lg font-bold text-green-light">98%</div>
                   <div className="text-xs md:text-sm text-white/80">Taxa de aprovação</div>
@@ -61,6 +57,10 @@ const HeroSection = () => {
                   <div className="text-responsive-lg font-bold text-green-light">200+</div>
                   <div className="text-xs md:text-sm text-white/80">Alunos matriculados</div>
                 </div>
+                <div>
+                  <div className="text-responsive-lg font-bold text-green-light">100%</div>
+                  <div className="text-xs md:text-sm text-white/80">Dedicação</div>
+                </div>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <p className="text-green-100 text-responsive-sm">
                 <Star className="w-4 h-4 inline text-yellow-400 mr-1" />
-                Vagas limitadas para 2024 | Matrícula gratuita até 31 de Janeiro
+                Vagas limitadas para 2026
               </p>
             </div>
           </div>

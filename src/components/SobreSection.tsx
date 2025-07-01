@@ -14,8 +14,8 @@ const SobreSection = () => {
               />
               <div className="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 lg:-bottom-6 lg:-right-6 bg-green-primary text-white card-padding rounded-xl shadow-lg">
                 <div className="text-center">
-                  <p className="font-poppins font-bold text-responsive-lg">15+</p>
-                  <p className="font-poppins text-xs md:text-sm">Anos de excelência</p>
+                  <p className="font-poppins font-bold text-responsive-lg">100%</p>
+                  <p className="font-poppins text-xs md:text-sm">Dedicação</p>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@ const SobreSection = () => {
               </p>
               
               <p className="font-poppins text-responsive-base text-gray-600 leading-relaxed text-center md:text-left">
-                Com mais de 15 anos de experiência, formamos gerações de jovens preparados para os desafios do 
+                Com uma sólida experiência educacional, formamos gerações de jovens preparados para os desafios do 
                 futuro. Nossa equipe pedagógica qualificada, infraestrutura moderna e valores sólidos fazem do 
                 Colégio Pércia a melhor escolha para o desenvolvimento integral dos seus filhos.
               </p>

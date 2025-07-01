@@ -1,24 +1,24 @@
 
-import { Shield, GraduationCap, Heart } from 'lucide-react';
+import { Users, Building, BookOpen } from 'lucide-react';
 
 const DiferenciaisSection = () => {
   const diferenciais = [
     {
-      icon: Shield,
-      title: 'Ambiente Seguro',
-      description: 'Instalações protegidas e ambiente acolhedor para o desenvolvimento completo dos nossos alunos.',
+      icon: Users,
+      title: 'Professores Qualificados',
+      description: 'Equipe pedagógica experiente e dedicada ao desenvolvimento completo dos nossos alunos.',
       color: 'bg-green-primary'
     },
     {
-      icon: GraduationCap,
-      title: 'Educação de Excelência',
-      description: 'Metodologia moderna com 98% de taxa de aprovação e preparação para o futuro.',
+      icon: Building,
+      title: 'Estrutura Moderna',
+      description: 'Instalações equipadas com tecnologia e infraestrutura adequada para o ensino de qualidade.',
       color: 'bg-red-bright'
     },
     {
-      icon: Heart,
-      title: 'Desenvolvimento Integral',
-      description: 'Crescimento acadêmico, social e emocional com acompanhamento personalizado.',
+      icon: BookOpen,
+      title: 'Apoio Pedagógico Eficaz',
+      description: 'Acompanhamento personalizado e metodologias que garantem o sucesso académico.',
       color: 'bg-green-dark'
     }
   ];

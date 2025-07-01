@@ -3,29 +3,29 @@ const ProgramasSection = () => {
   const programas = [
     {
       titulo: 'Ensino Primário',
-      subtitulo: '1ª - 7ª Classe',
+      subtitulo: '1ª - 6ª Classe',
       descricao: 'Base sólida para o desenvolvimento cognitivo e social das crianças com metodologia lúdica e participativa.',
       imagem: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
       cor: 'bg-green-dark'
     },
     {
-      titulo: 'Ensino Secundário Geral',
-      subtitulo: '8ª - 10ª Classe',
+      titulo: 'Ensino Secundário',
+      subtitulo: '7ª - 9ª Classe',
       descricao: 'Consolidação dos conhecimentos fundamentais com foco no desenvolvimento crítico e analítico.',
       imagem: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
       cor: 'bg-red-bright'
     },
     {
       titulo: 'Ensino Pré-Universitário',
-      subtitulo: '11ª - 12ª Classe',
+      subtitulo: '10ª - 12ª Classe',
       descricao: 'Preparação especializada para o ensino superior com orientação vocacional e acadêmica.',
       imagem: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
       cor: 'bg-green-primary'
     },
     {
-      titulo: 'Reforço & Preparatórios',
+      titulo: 'Reforço Escolar',
       subtitulo: 'Apoio Especializado',
-      descricao: 'Aulas de reforço e preparação para exames com acompanhamento personalizado.',
+      descricao: 'Aulas de reforço com acompanhamento personalizado para melhor desempenho acadêmico.',
       imagem: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop',
       cor: 'bg-green-medium'
     }
