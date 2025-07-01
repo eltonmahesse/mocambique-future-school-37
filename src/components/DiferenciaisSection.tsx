@@ -11,8 +11,8 @@ const DiferenciaisSection = () => {
     },
     {
       icon: Building,
-      title: 'Estrutura Moderna',
-      description: 'Instalações equipadas com tecnologia e infraestrutura adequada para o ensino de qualidade.',
+      title: 'Instalações de Qualidade',
+      description: 'Ambiente educacional bem equipado e adequado para proporcionar o melhor aprendizado.',
       color: 'bg-red-bright'
     },
     {

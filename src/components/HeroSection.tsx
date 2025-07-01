@@ -63,14 +63,6 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-
-            {/* Informação sobre matrícula */}
-            <div className="space-y-4">
-              <p className="text-green-100 text-responsive-sm">
-                <Star className="w-4 h-4 inline text-yellow-400 mr-1" />
-                Vagas limitadas para 2026
-              </p>
-            </div>
           </div>
 
           {/* Imagem Principal */}

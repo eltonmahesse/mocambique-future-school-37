@@ -11,7 +11,6 @@ const ContatoSection = () => {
     nome: '',
     email: '',
     telefone: '',
-    idade_filho: '',
     mensagem: ''
   });
   const { toast } = useToast();
@@ -45,7 +44,6 @@ const ContatoSection = () => {
       nome: '',
       email: '',
       telefone: '',
-      idade_filho: '',
       mensagem: ''
     });
   };
@@ -105,34 +103,18 @@ const ContatoSection = () => {
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block font-poppins font-medium text-gray-700 mb-2">
-                    Email
-                  </label>
-                  <Input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block font-poppins font-medium text-gray-700 mb-2">
-                    Idade do Filho
-                  </label>
-                  <Input
-                    type="text"
-                    name="idade_filho"
-                    value={formData.idade_filho}
-                    onChange={handleInputChange}
-                    className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary"
-                    placeholder="Ex: 8 anos"
-                  />
-                </div>
+              <div>
+                <label className="block font-poppins font-medium text-gray-700 mb-2">
+                  Email
+                </label>
+                <Input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="w-full rounded-xl border-gray-200 focus:border-green-primary focus:ring-green-primary"
+                  placeholder="seu@email.com"
+                />
               </div>
 
               <div>
