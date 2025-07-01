@@ -5,6 +5,7 @@ import DiferenciaisSection from '@/components/DiferenciaisSection';
 import SobreSection from '@/components/SobreSection';
 import ProgramasSection from '@/components/ProgramasSection';
 import GaleriaSection from '@/components/GaleriaSection';
+import TransporteSection from '@/components/TransporteSection';
 import TabelaPrecos2026Section from '@/components/TabelaPrecos2026Section';
 import VideoInstitucionalSection from '@/components/VideoInstitucionalSection';
 import DepoimentosSection from '@/components/DepoimentosSection';
@@ -22,6 +23,7 @@ const Index = () => {
       <SobreSection />
       <ProgramasSection />
       <GaleriaSection />
+      <TransporteSection />
       <TabelaPrecos2026Section />
       <VideoInstitucionalSection />
       <DepoimentosSection />
