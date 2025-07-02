@@ -109,44 +109,92 @@
   .z-overlay { z-index: 90; }
   .z-dropdown { z-index: 60; }
 
-  /* Container System - Padronizado */
+  /* Container System - Padronizado e Responsivo */
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
     width: 100%;
     box-sizing: border-box;
   }
 
-  /* Section Spacing System - Padronizado */
+  /* Tablet Container Optimization */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      @apply px-8;
+      max-width: calc(100vw - 4rem);
+    }
+  }
+
+  /* Large Desktop Container */
+  @media (min-width: 1920px) {
+    .container {
+      @apply px-12;
+      max-width: min(90vw, 1600px);
+    }
+  }
+
+  /* Ultra Wide Container */
+  @media (min-width: 2560px) {
+    .container {
+      @apply px-16;
+      max-width: min(85vw, 2000px);
+    }
+  }
+
+  /* Section Spacing System - Dinâmico */
   .section-spacing {
-    @apply py-8 md:py-12 lg:py-16;
+    padding-top: clamp(2rem, 6vh, 4rem);
+    padding-bottom: clamp(2rem, 6vh, 4rem);
   }
 
   .section-spacing-large {
-    @apply py-12 md:py-16 lg:py-20;
+    padding-top: clamp(3rem, 8vh, 6rem);
+    padding-bottom: clamp(3rem, 8vh, 6rem);
   }
 
-  /* Responsive Text System */
+  /* Hero Section Specific Spacing */
+  .hero-section-spacing {
+    padding-top: clamp(1.5rem, 4vh, 3rem);
+    padding-bottom: clamp(1.5rem, 4vh, 3rem);
+  }
+
+  /* Dynamic Text System */
   .text-responsive-sm {
-    @apply text-sm md:text-base;
+    font-size: clamp(0.875rem, 2vw, 1rem);
   }
 
   .text-responsive-base {
-    @apply text-base md:text-lg;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
   }
 
   .text-responsive-lg {
-    @apply text-lg md:text-xl lg:text-2xl;
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
   }
 
   .text-responsive-xl {
-    @apply text-xl md:text-2xl lg:text-3xl;
+    font-size: clamp(1.25rem, 4vw, 2rem);
   }
 
   .text-responsive-2xl {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    font-size: clamp(1.5rem, 5vw, 3rem);
   }
 
-  /* Card System - Altura Uniforme */
+  /* Hero Section Dynamic Typography */
+  .hero-title {
+    font-size: clamp(1.75rem, 5.5vw, 4rem);
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 1.4;
+  }
+
+  .hero-text {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    line-height: 1.6;
+  }
+
+  /* Card System - Altura Uniforme e Responsiva */
   .card-uniform {
     @apply h-full flex flex-col;
   }
@@ -155,9 +203,22 @@
     @apply flex-grow;
   }
 
-  /* Grid System Responsivo */
+  /* Dynamic Card Padding */
+  .card-padding {
+    padding: clamp(1rem, 3vw, 2rem);
+  }
+
+  /* Grid System Responsivo Aprimorado */
   .grid-responsive-2 {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8;
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8;
+  }
+
+  /* Tablet Grid Optimization */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .grid-responsive-2 {
+      gap: clamp(1.5rem, 4vw, 2.5rem);
+      align-items: center;
+    }
   }
 
   .grid-responsive-3 {
@@ -212,6 +273,13 @@
       padding-left: 0.5rem;
       padding-right: 0.5rem;
     }
+
+    /* Hero Section Tablet Adjustments */
+    .hero-section-tablet {
+      min-height: clamp(70vh, 85vh, 90vh);
+      padding-top: clamp(8rem, 12vh, 10rem);
+      padding-bottom: clamp(2rem, 6vh, 4rem);
+    }
   }
 
   /* Desktop optimizations - Melhorado */
@@ -224,6 +292,38 @@
     nav button {
       min-width: fit-content;
       white-space: nowrap;
+    }
+  }
+
+  /* Large Desktop (1920px+) */
+  @media (min-width: 1920px) {
+    .hero-section-large {
+      min-height: clamp(80vh, 90vh, 95vh);
+      padding-top: clamp(8rem, 10vh, 12rem);
+      padding-bottom: clamp(4rem, 8vh, 6rem);
+    }
+
+    .hero-image-large {
+      height: clamp(400px, 50vh, 600px);
+      max-width: clamp(400px, 35vw, 500px);
+    }
+  }
+
+  /* Ultra Wide (2560px+) */
+  @media (min-width: 2560px) {
+    .hero-section-ultra {
+      min-height: clamp(75vh, 85vh, 90vh);
+      padding-top: clamp(10rem, 12vh, 14rem);
+      padding-bottom: clamp(6rem, 10vh, 8rem);
+    }
+
+    .hero-image-ultra {
+      height: clamp(500px, 45vh, 700px);
+      max-width: clamp(500px, 30vw, 600px);
+    }
+
+    .hero-content-ultra {
+      gap: clamp(2rem, 4vh, 3rem);
     }
   }
 
@@ -263,10 +363,6 @@
     @apply py-8 md:py-12 lg:py-16;
   }
 
-  .card-padding {
-    @apply p-4 md:p-6;
-  }
-
   /* Enhanced grid utilities */
   .grid-responsive {
     @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6;
@@ -304,6 +400,28 @@
     aspect-ratio: 1 / 1;
   }
 
+  /* Dynamic Height Utilities */
+  .min-h-hero {
+    min-height: clamp(60vh, 85vh, 95vh);
+  }
+
+  .min-h-hero-tablet {
+    min-height: clamp(70vh, 80vh, 85vh);
+  }
+
+  .min-h-hero-large {
+    min-height: clamp(75vh, 85vh, 90vh);
+  }
+
+  /* Dynamic Spacing Utilities */
+  .space-y-dynamic > * + * {
+    margin-top: clamp(1rem, 3vh, 2rem);
+  }
+
+  .space-y-dynamic-lg > * + * {
+    margin-top: clamp(1.5rem, 4vh, 3rem);
+  }
+
   /* Utilidades para melhor alinhamento de navegação */
   .nav-item {
     @apply flex-shrink-0 whitespace-nowrap;
@@ -320,6 +438,27 @@
   
   .flex-centered {
     @apply flex items-center justify-center;
+  }
+
+  /* Hero Section Specific Utilities */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .hero-grid {
+      gap: clamp(3rem, 6vw, 5rem);
+    }
   }
 }
 
