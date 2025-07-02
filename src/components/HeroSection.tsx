@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-20 md:pt-32 lg:pt-28">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-32 md:pt-32 lg:pt-28">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 py-6 md:py-8 lg:py-12">
-        <div className="grid-responsive-2 items-center min-h-[calc(100vh-200px)] md:min-h-[calc(100vh-220px)] lg:min-h-[calc(100vh-160px)]">
+        <div className="grid-responsive-2 items-center min-h-[calc(100vh-280px)] md:min-h-[calc(100vh-220px)] lg:min-h-[calc(100vh-160px)]">
           {/* Conteúdo Principal */}
           <div className="text-white text-center lg:text-left space-y-6 md:space-y-8 order-2 lg:order-1">
             
@@ -66,13 +66,13 @@ const HeroSection = () => {
           </div>
 
           {/* Imagem Principal */}
-          <div className="flex justify-center order-1 lg:order-2">
+          <div className="flex justify-center order-1 lg:order-2 mb-6 lg:mb-0">
             <div className="relative group max-w-md w-full">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&h=600&fit=crop"
                   alt="Estudantes do Colégio Pércia"
-                  className="w-full h-80 md:h-96 object-cover transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-72 sm:h-80 md:h-96 object-cover transition-all duration-700 group-hover:scale-105"
                 />
                 
                 {/* Overlay com informação */}
