@@ -83,7 +83,7 @@ const HeroSection = () => {
                   className="w-full object-cover transition-all duration-700 group-hover:scale-105
                     h-72 sm:h-80 
                     md:h-96 
-                    lg:h-[400px] xl:hero-image-large 
+                    lg:h-[350px] xl:h-[350px]
                     2xl:hero-image-ultra"
                 />
                 
