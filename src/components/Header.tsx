@@ -85,8 +85,12 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo - com melhor espaçamento */}
             <div className="flex items-center space-x-3 flex-shrink-0 min-w-fit">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-green-primary rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-lg md:text-xl">CP</span>
+              <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">
+                <img 
+                  src="/lovable-uploads/9b99876a-00a5-4b05-8f77-5a0dde86dd9d.png" 
+                  alt="Colégio Pércia"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-poppins font-bold text-base md:text-lg lg:text-xl leading-tight">

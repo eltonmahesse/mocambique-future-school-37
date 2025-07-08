@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-20 md:pt-32 lg:pt-28"
+      className="relative min-h-screen bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center overflow-hidden pt-24 md:pt-36 lg:pt-28"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
