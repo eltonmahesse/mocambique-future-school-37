@@ -1,36 +1,45 @@
-
-import { Play, Users, GraduationCap, Award, X } from 'lucide-react';
-import { useState } from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Play, Users, GraduationCap, Award, X } from "lucide-react";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const VideoInstitucionalSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
 
   const videos = [
     {
-      id: 'dQw4w9WgXcQ',
-      titulo: 'Tour Virtual das Instalações',
-      descricao: 'Conheça nossos laboratórios, salas de aula e espaços de convivência',
-      thumbnail: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop',
+      id: "dQw4w9WgXcQ",
+      titulo: "Tour Virtual das Instalações",
+      descricao:
+        "Conheça nossos laboratórios, salas de aula e espaços de convivência",
+      thumbnail:
+        "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop",
       icone: Users,
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      embedUrl: "imagens/video-institucional.mp4",
     },
     {
-      id: 'dQw4w9WgXcQ2',
-      titulo: 'Metodologia Pedagógica',
-      descricao: 'Nossa abordagem inovadora para o ensino e aprendizagem',
-      thumbnail: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop',
+      id: "dQw4w9WgXcQ2",
+      titulo: "Metodologia Pedagógica",
+      descricao: "Nossa abordagem inovadora para o ensino e aprendizagem",
+      thumbnail:
+        "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop",
       icone: GraduationCap,
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      embedUrl: "imagens/professor-depoimento.mp4",
     },
     {
-      id: 'dQw4w9WgXcQ3',
-      titulo: 'Depoimentos de Sucesso',
-      descricao: 'Histórias de alunos que se destacaram após formação no Colégio Pércia',
-      thumbnail: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop',
+      id: "dQw4w9WgXcQ3",
+      titulo: "Depoimentos de Sucesso",
+      descricao:
+        "Histórias de alunos que se destacaram após formação no Colégio Pércia",
+      thumbnail:
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop",
       icone: Award,
-      embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    }
+      embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    },
   ];
 
   const openVideoModal = (index: number) => {
@@ -47,10 +56,12 @@ const VideoInstitucionalSection = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-gray-800 mb-4">
-              Conheça o Colégio Pércia em <span className="text-green-primary">Vídeo</span>
+              Conheça o Colégio Pércia em{" "}
+              <span className="text-green-primary">Vídeo</span>
             </h2>
             <p className="font-poppins text-lg text-gray-600 max-w-3xl mx-auto">
-              Descubra nossa infraestrutura, metodologia e os resultados que alcançamos na formação de jovens em Moçambique
+              Descubra nossa infraestrutura, metodologia e os resultados que
+              alcançamos na formação de jovens em Moçambique
             </p>
           </div>
 
@@ -69,17 +80,17 @@ const VideoInstitucionalSection = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
-                  
+
                   {/* Overlay escuro */}
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
-                  
+
                   {/* Botão Play */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-green-primary hover:bg-green-medium text-white p-4 rounded-full shadow-2xl group-hover:scale-110 transition-all duration-300">
                       <Play size={32} fill="white" />
                     </div>
                   </div>
-                  
+
                   {/* Ícone da categoria */}
                   <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full">
                     <video.icone className="text-green-primary" size={20} />
@@ -91,7 +102,7 @@ const VideoInstitucionalSection = () => {
                   <h3 className="font-poppins font-bold text-xl text-gray-800 mb-3 group-hover:text-green-primary transition-colors duration-300">
                     {video.titulo}
                   </h3>
-                  
+
                   <p className="font-poppins text-gray-600 text-sm leading-relaxed mb-4">
                     {video.descricao}
                   </p>
@@ -115,7 +126,8 @@ const VideoInstitucionalSection = () => {
                 Interessado em conhecer mais?
               </h3>
               <p className="font-poppins text-gray-600 mb-6">
-                Agende uma visita presencial e veja de perto tudo o que o Colégio Pércia oferece para o desenvolvimento do seu filho.
+                Agende uma visita presencial e veja de perto tudo o que o
+                Colégio Pércia oferece para o desenvolvimento do seu filho.
               </p>
               <button className="bg-green-primary hover:bg-green-medium text-white font-poppins font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
                 Agendar Visita
@@ -136,7 +148,7 @@ const VideoInstitucionalSection = () => {
               <X size={24} />
             </button>
           </DialogHeader>
-          
+
           {selectedVideo !== null && (
             <div className="aspect-video w-full">
               <iframe
