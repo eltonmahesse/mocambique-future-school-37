@@ -15,8 +15,12 @@ const Footer = () => {
           {/* Logo e descrição */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-12 h-12 bg-green-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CP</span>
+              <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/9b99876a-00a5-4b05-8f77-5a0dde86dd9d.png" 
+                  alt="Colégio Pércia"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-poppins font-bold text-2xl">
                 Colégio Pércia
