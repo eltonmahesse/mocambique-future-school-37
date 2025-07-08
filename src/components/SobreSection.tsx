@@ -7,7 +7,7 @@ const SobreSection = () => {
           <div className="animate-fade-in order-2 md:order-1">
             <div className="relative max-w-lg mx-auto md:max-w-none">
               <img
-                src="imagens/fysic-pic1.jpg"
+                src="imagens/lab-quimica.jpg"
                 alt="Estudante a desenvolver actividades"
                 className="w-full h-64 md:h-80 lg:h-96 object-cover rounded-2xl shadow-2xl"
               />
