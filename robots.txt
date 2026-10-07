@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Recursos essenciais para renderização
+Allow: /css/
+Allow: /js/
+Allow: /imagens/
+Allow: /lovable-uploads/
+
+# Sitemap
+Sitemap: https://www.colegiopercia.edu.mz/sitemap.xml

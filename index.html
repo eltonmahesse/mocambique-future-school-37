@@ -1,28 +1,504 @@
 
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/lovable-uploads/9b99876a-00a5-4b05-8f77-5a0dde86dd9d.png" type="image/png">
-    <title>Colégio Pércia - Educação de Qualidade em Moçambique</title>
-    <meta name="description" content="Colégio privado em Moçambique oferecendo ensino primário e secundário com excelência. Formamos mentes para transformar o futuro." />
-    <meta name="author" content="Colégio Pércia" />
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Colégio Pércia - Educação de Qualidade" />
-    <meta property="og:description" content="Colégio privado em Moçambique oferecendo ensino primário e secundário com excelência" />
-    <meta property="og:type" content="website" />
+  <!-- SEO: Title e Meta Description -->
+  <title>Colégio Pércia | Escola na Cidade da Matola, Moçambique</title>
+  <meta name="description" content="Colégio Pércia — escola privada na Cidade da Matola, Intaka 2, Moçambique. Ensino da 1.ª à 12.ª classe, transporte escolar e actividades extracurriculares. Consulte informações de matrícula.">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    
-    <!-- Google Fonts - Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
+  <!-- SEO: Canonical -->
+  <link rel="canonical" href="https://www.colegiopercia.edu.mz/">
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- SEO: Open Graph (partilha social e WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Colégio Pércia">
+  <meta property="og:title" content="Colégio Pércia | Escola na Cidade da Matola, Moçambique">
+  <meta property="og:description" content="Colégio Pércia — escola privada na Cidade da Matola, Intaka 2. Ensino da 1.ª à 12.ª classe, transporte escolar e actividades extracurriculares. Consulte informações de matrícula.">
+  <meta property="og:url" content="https://www.colegiopercia.edu.mz/">
+  <meta property="og:image" content="https://www.colegiopercia.edu.mz/imagens/hero-section-pic1.jpg">
+  <meta property="og:locale" content="pt_MZ">
+
+  <!-- SEO: Dados estruturados — EducationalOrganization + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "name": "Colégio Pércia",
+    "url": "https://www.colegiopercia.edu.mz/",
+    "logo": "https://www.colegiopercia.edu.mz/lovable-uploads/9b99876a-00a5-4b05-8f77-5a0dde86dd9d.png",
+    "image": "https://www.colegiopercia.edu.mz/imagens/hero-section-pic1.jpg",
+    "description": "Colégio Pércia — escola privada na Cidade da Matola, Intaka 2, Moçambique. Ensino da 1.ª à 12.ª classe, transporte escolar e actividades extracurriculares.",
+    "telephone": "+258858681368",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Intaka 2",
+      "addressLocality": "Matola",
+      "addressCountry": "MZ"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "17:00"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Programas de Ensino",
+      "itemListElement": [
+        {"@type": "Course", "name": "Ensino Primário", "description": "1.ª à 6.ª classe"},
+        {"@type": "Course", "name": "Ensino Secundário", "description": "7.ª à 9.ª classe"},
+        {"@type": "Course", "name": "Ensino Pré-Universitário", "description": "10.ª à 12.ª classe"},
+        {"@type": "Course", "name": "Reforço Escolar", "description": "Apoio pedagógico especializado"}
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'green-primary':'#149911','green-light':'#1EFC1E','green-dark':'#244F26','green-medium':'#256D1B','red-bright':'#E53935'},fontFamily:{poppins:['Poppins','sans-serif']}}}};</script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-poppins bg-white text-gray-800">
+  <header class="fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <div class="bg-green-dark text-white py-2 hidden md:block">
+      <div class="container flex justify-between text-sm">
+        <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> 858 681 368</span>
+        <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg> Matola, Intaka 2</span>
+      </div>
+    </div>
+    <div class="bg-green-dark text-white py-2 md:hidden">
+      <div class="container flex justify-between text-xs">
+        <span class="inline-flex items-center gap-1"><svg class="w-3.5 h-3.5 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg> 858 681 368</span>
+        <span class="inline-flex items-center gap-1"><svg class="w-3.5 h-3.5 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg> Matola</span>
+      </div>
+    </div>
+    <div class="bg-green-medium"><div class="container"><div class="flex items-center justify-between gap-3 py-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0"><img src="lovable-uploads/9b99876a-00a5-4b05-8f77-5a0dde86dd9d.png" alt="Logótipo do Colégio Pércia" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"><strong class="text-white text-base md:text-xl whitespace-nowrap"><span class="hidden sm:inline">Colégio Pércia</span><span class="sm:hidden">C. Pércia</span></strong></a>
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-white">
+        <a href="index.html" class="font-semibold underline underline-offset-4">Início</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="programas.html">Programas</a>
+        <a href="inscricoes.html">Inscrições</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="inscricoes.html" id="header-cta" class="hidden sm:inline-flex items-center whitespace-nowrap bg-red-bright text-white font-bold px-4 py-2 rounded-full text-sm">Iniciar Matrícula</a>
+        <button id="menu-toggle" class="lg:hidden text-white p-2 flex items-center justify-center" aria-label="Abrir menu" aria-expanded="false"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg></button>
+      </div>
+    </div></div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-green-dark border-t border-green-medium"><a href="index.html">Início</a><a href="sobre.html">Sobre Nós</a><a href="programas.html">Programas</a><a href="inscricoes.html">Inscrições</a><a href="contacto.html">Contacto</a><a href="inscricoes.html" class="m-4 text-center bg-red-bright rounded-full">Iniciar Matrícula</a></nav>
+  </header>
+  <main>
+    <section id="home" class="relative home-hero bg-gradient-to-br from-green-dark via-green-medium to-green-primary flex items-center">
+      <div class="container">
+        <div class="grid-responsive-2 items-center">
+          <div class="text-white text-center lg:text-left space-y-8 order-2 lg:order-1">
+            <div>
+              <h1 class="font-black text-4xl md:text-5xl leading-tight">O Futuro do Vosso <span class="text-green-light">Filho</span> Começa Aqui</h1>
+              <p class="text-xl text-green-100 mt-4">Educação de qualidade da 1ª à 12ª Classe em Matola, Moçambique.</p>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-6 border border-white/20">
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <div><b class="text-2xl text-green-light">98%</b><small class="block text-white/80">Taxa de aprovação</small></div>
+                <div><b class="text-2xl text-green-light">200+</b><small class="block text-white/80">Alunos matriculados</small></div>
+                <div><b class="text-2xl text-green-light">100%</b><small class="block text-white/80">Dedicação</small></div>
+              </div>
+            </div>
+            <div class="home-hero__actions flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="inscricoes.html" id="hero-cta-primary" class="button-danger text-center">Falar com o Colégio</a>
+              <a href="sobre.html" id="hero-cta-secondary" class="button-outline text-center">Conhecer o Colégio</a>
+            </div>
+          </div>
+          <div class="flex justify-center order-1 lg:order-2">
+            <div class="relative max-w-md w-full overflow-hidden rounded-3xl shadow-2xl">
+              <img src="imagens/hero-section-pic1.jpg" alt="Alunos do Colégio Pércia em actividade escolar, Matola" class="w-full h-80 md:h-96 object-cover" width="448" height="384" loading="eager">
+              <div class="absolute bottom-5 left-5 right-5 bg-white/95 rounded-xl p-4">
+                <strong class="text-green-dark">Ensino de Qualidade</strong>
+                <span class="block text-sm text-gray-600">Matola, Moçambique · 200+ alunos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POR QUÊ ESCOLHER ===== -->
+    <section class="section-spacing-large">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">Por que Escolher o <span>Colégio Pércia</span>?</h2>
+          <p class="lead">Três pilares fundamentais que fazem a diferença na educação do vosso filho</p>
+        </header>
+        <div class="grid-responsive-3">
+          <article class="feature-card">
+            <div class="icon bg-green-primary">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-5.25 6.557c0 1.518.895 2.87 2.25 3.51"/></svg>
+            </div>
+            <h3>Professores Qualificados</h3>
+            <p>Equipa pedagógica experiente e dedicada ao desenvolvimento completo dos nossos alunos.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon bg-red-bright">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.333A48.357 48.357 0 0012 9.75c-2.551 0-5.056.2-7.5.583V21m16.5 0H3"/></svg>
+            </div>
+            <h3>Instalações de Qualidade</h3>
+            <p>Ambiente educacional bem equipado e adequado para proporcionar a melhor aprendizagem.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon bg-green-dark">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+            </div>
+            <h3>Apoio Pedagógico Eficaz</h3>
+            <p>Acompanhamento personalizado e metodologias que garantem o sucesso académico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE NÓS ===== -->
+    <section id="sobre" class="section-spacing">
+      <div class="container">
+        <div class="grid-responsive-2 items-center">
+          <div class="relative order-2 md:order-1">
+            <img src="imagens/lab-quimica.jpg" alt="Aluno do Colégio Pércia em aula de laboratório de Química" class="w-full h-64 md:h-80 lg:h-96 object-cover rounded-2xl shadow-2xl" width="640" height="480" loading="lazy">
+            <div class="absolute -bottom-4 -right-3 bg-green-primary text-white p-5 rounded-xl shadow-lg text-center"><b class="text-2xl">100%</b><small class="block">Dedicação</small></div>
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="title">A nossa missão é educar com <span>propósito</span></h2>
+            <p class="body-copy">O Colégio Pércia nasceu com o compromisso de oferecer uma educação transformadora em Moçambique. Acreditamos que cada criança tem potencial único e a nossa missão é desenvolver esse potencial através de metodologias inovadoras e um ambiente de aprendizagem estimulante.</p>
+            <p class="body-copy">Com uma sólida experiência educacional, formamos gerações de jovens preparados para os desafios do futuro. A nossa equipa pedagógica qualificada, infraestrutura moderna e valores sólidos fazem do Colégio Pércia uma escolha de confiança para o desenvolvimento integral dos vossos filhos.</p>
+            <!-- Sobre CTA: encaminhar para programas -->
+            <div class="mt-8">
+              <a href="programas.html" id="sobre-cta" class="button-primary">Conhecer os nossos programas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAMAS ===== -->
+    <section id="programas" class="section-spacing bg-gray-50">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">Os Nossos <span>Programas</span></h2>
+          <p class="lead">Oferecemos programas educacionais completos para todas as fases do desenvolvimento</p>
+        </header>
+        <div class="grid-responsive-4">
+          <article class="program-card"><img src="imagens/hero-section-pic1.jpg" alt="Turma de ensino primário do Colégio Pércia — 1.ª à 6.ª classe" loading="lazy"><div><b>1ª - 6ª Classe</b><h3>Ensino Primário</h3><p>Base sólida para o desenvolvimento cognitivo e social das crianças com metodologia lúdica e participativa.</p></div></article>
+          <article class="program-card"><img src="imagens/excursao4.jpg" alt="Alunos do ensino secundário do Colégio Pércia em actividade — 7.ª à 9.ª classe" loading="lazy"><div><b class="badge red">7ª - 9ª Classe</b><h3>Ensino Secundário</h3><p>Consolidação dos conhecimentos fundamentais com foco no desenvolvimento crítico e analítico.</p></div></article>
+          <article class="program-card"><img src="imagens/pre-universitario.jpg" alt="Estudantes do ensino pré-universitário do Colégio Pércia — 10.ª à 12.ª classe" loading="lazy"><div><b>10ª - 12ª Classe</b><h3>Ensino Pré-Universitário</h3><p>Preparação especializada para o ensino superior com orientação vocacional e académica.</p></div></article>
+          <article class="program-card"><img src="imagens/biblioteca1.jpg" alt="Biblioteca do Colégio Pércia utilizada em sessões de reforço escolar" loading="lazy"><div><b class="badge medium">Apoio Especializado</b><h3>Reforço Escolar</h3><p>Aulas de reforço com acompanhamento personalizado para melhor desempenho académico.</p></div></article>
+        </div>
+        <!-- Programas CTA: avançar para informações de matrícula -->
+        <div class="text-center mt-10">
+          <a href="inscricoes.html" id="programas-cta" class="button-primary">Ver informações de matrícula</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSTALAÇÕES ===== -->
+    <section id="instalacoes" class="section-spacing">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">As Nossas <span>Instalações</span></h2>
+          <p class="lead">Conheça os nossos espaços modernos e equipados para a melhor aprendizagem</p>
+        </header>
+        <div class="relative max-w-4xl mx-auto">
+          <div class="relative h-80 md:h-96 overflow-hidden rounded-3xl shadow-2xl">
+            <img id="gallery-image" src="imagens/tic-room1.jpg" alt="Estudantes em sala de Informática" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <h3 id="gallery-caption" class="font-bold text-white text-xl">Estudantes em sala de Informática</h3>
+            </div>
+          </div>
+          <button class="carousel-button left-4" data-gallery="prev" aria-label="Imagem anterior">‹</button>
+          <button class="carousel-button right-4" data-gallery="next" aria-label="Próxima imagem">›</button>
+          <div id="gallery-dots" class="flex justify-center gap-2 mt-6"></div>
+        </div>
+        <div id="gallery-thumbnails" class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-8 max-w-4xl mx-auto"></div>
+        <!-- Instalações CTA: contactar após avaliar estrutura -->
+        <div class="text-center mt-10">
+          <a href="inscricoes.html" id="instalacoes-cta" class="button-primary">Falar com o Colégio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRANSPORTE ===== -->
+    <section id="transporte" class="section-spacing">
+      <div class="container text-center">
+        <h2 class="title">Transporte Escolar <span>Seguro e Fiável</span></h2>
+        <p class="lead max-w-3xl mx-auto mb-8">O Colégio Pércia disponibiliza serviço de transporte escolar diário para garantir que os nossos alunos cheguem à escola com segurança, conforto e pontualidade.</p>
+        <img src="imagens/transport1.jpg" alt="Autocarro do serviço de transporte escolar do Colégio Pércia, Matola" class="max-w-2xl mx-auto w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg mb-12" loading="lazy">
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <article class="transport-card bg-green-dark">
+            <b>
+              <svg class="w-5 h-5 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+              Máxima Segurança
+            </b>
+            <p>Veículos inspeccionados e motoristas experientes com licenças válidas.</p>
+          </article>
+          <article class="transport-card bg-green-medium">
+            <b>
+              <svg class="w-5 h-5 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Pontualidade
+            </b>
+            <p>Horários rigorosamente cumpridos com rotas optimizadas.</p>
+          </article>
+          <article class="transport-card bg-green-primary">
+            <b>
+              <svg class="w-5 h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              Ampla Cobertura
+            </b>
+            <p>Rotas que cobrem as principais zonas da Matola e arredores.</p>
+          </article>
+        </div>
+        <!-- Transporte CTA: rotas dependem da zona, encaminhar para WhatsApp -->
+        <div class="mt-10">
+          <p class="text-gray-600 mb-4">A disponibilidade das rotas depende da zona de residência. Consulte a secretaria para confirmar a cobertura.</p>
+          <a href="https://wa.me/258858681368?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20existe%20transporte%20escolar%20para%20a%20minha%20zona.%20Obrigado%2Fa." id="transporte-cta" target="_blank" rel="noopener" class="button-primary">Consultar disponibilidade de transporte</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATRÍCULA CTA ===== -->
+    <section class="section-spacing-large">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">Informações de <span>Matrícula</span></h2>
+          <p class="lead">Consulte classes disponíveis, documentação necessária e valores de propinas.</p>
+          <div class="inline-flex items-center gap-3 bg-green-50 border border-green-200 rounded-2xl px-6 py-3 mt-6 text-left">
+            <svg class="w-6 h-6 text-green-dark shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
+            <div>
+              <b class="text-green-dark block">Disciplinas Profissionalizantes</b>
+              <small class="block text-green-medium">Artes Plásticas e Taekwondo</small>
+            </div>
+          </div>
+        </header>
+        <!-- Preços CTA: intenção de decisão elevada -->
+        <div class="text-center mt-10">
+          <p class="text-gray-600 mb-4">Tem dúvidas sobre valores, documentação ou disponibilidade de vagas?</p>
+          <a href="inscricoes.html" id="precos-cta" class="button-danger">Iniciar Matrícula</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section-spacing bg-gray-50">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">Conheça o Colégio Pércia em <span>Vídeo</span></h2>
+          <p class="lead">Descubra a nossa infraestrutura, metodologia e o ambiente de aprendizagem que oferecemos</p>
+        </header>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="video-grid"></div>
+        <div class="text-center mt-12">
+          <div class="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Interessado em conhecer mais?</h3>
+            <p class="text-gray-600 mb-6">Marque uma visita presencial e veja de perto tudo o que o Colégio Pércia oferece.</p>
+            <a href="https://wa.me/258858681368?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20visita%20ao%20Col%C3%A9gio%20P%C3%A9rcia.%20Obrigado%2Fa." id="videos-cta" target="_blank" rel="noopener" class="button-primary">Marcar uma visita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section-spacing">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">O que os <span>pais</span> dizem</h2>
+          <p class="lead">Depoimentos de famílias que confiam no Colégio Pércia</p>
+        </header>
+        <div class="relative max-w-4xl mx-auto">
+          <div class="overflow-hidden"><div id="testimonial-track" class="flex transition-transform duration-500"></div></div>
+          <button class="carousel-button left-0" data-testimonial="prev" aria-label="Depoimento anterior">‹</button>
+          <button class="carousel-button right-0" data-testimonial="next" aria-label="Próximo depoimento">›</button>
+          <div id="testimonial-dots" class="flex justify-center gap-2 mt-8"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing-large bg-gradient-to-r from-green-dark to-green-medium">
+      <div class="container">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl text-center max-w-3xl mx-auto">
+          <h2 class="title">Está a procurar uma escola para o seu filho?</h2>
+          <p class="lead max-w-2xl mx-auto mb-8">Fale com o Colégio Pércia e esclareça as suas dúvidas sobre matrículas, classes e condições de ingresso.</p>
+          <a href="inscricoes.html" id="cta-intermedio" class="button-danger">Falar com o Colégio</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section-spacing bg-gray-50">
+      <div class="container">
+        <header class="text-center mb-12">
+          <h2 class="title">Localização do <span>Colégio Pércia</span></h2>
+          <p class="lead">Encontre-nos na Cidade da Matola — Intaka 2, Moçambique</p>
+        </header>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2 bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.621245780516!2d32.5485626!3d-25.794112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee6935128abde25%3A0xed5a2ec6ee8a1ba!2zQ29sw6lnaW8gUMOpcmNpYQ!5e0!3m2!1spt!2smz!4v1700000000000!5m2!1spt!2smz" width="100%" height="400" loading="lazy" title="Localização do Colégio Pércia em Matola, Intaka 2"></iframe>
+          </div>
+          <div class="space-y-6">
+            <div class="bg-green-dark rounded-3xl p-8 text-white">
+              <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                <svg class="w-6 h-6 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                Morada
+              </h3>
+              <p class="mb-6 font-medium">Matola, Intaka 2<br><span class="text-sm font-normal text-green-100">Cidade da Matola, Moçambique</span></p>
+              <a href="https://g.co/kgs/nD3E5Jd" target="_blank" rel="noopener noreferrer" id="localizacao-cta" class="button-primary block text-center">Ver no Google Maps</a>
+            </div>
+            <div class="bg-white rounded-3xl p-8 shadow-lg">
+              <h3 class="text-xl font-bold mb-4 flex items-center gap-2 text-green-dark">
+                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                Informações
+              </h3>
+              <p><strong class="font-semibold text-gray-800">Matola, Intaka 2</strong><br><span class="text-sm text-gray-600">Cidade da Matola, Moçambique</span><br>Telefone: <a href="tel:858681368" class="text-green-primary font-semibold">858 681 368</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULÁRIO DE MATRÍCULA / CONTACTO ===== -->
+    <section id="contato" class="section-spacing bg-gray-50">
+      <div class="container max-w-6xl">
+        <header class="text-center mb-12">
+          <h2 class="title"><span>Contactar</span> o Colégio</h2>
+          <p class="lead">Entre em contacto connosco e esclareça todas as vossas dúvidas sobre matrículas e programas educacionais</p>
+        </header>
+        <div class="contact-layout">
+
+          <!-- FORMULÁRIO DE MATRÍCULA -->
+          <div id="matricula" class="bg-white rounded-3xl p-8 shadow-xl">
+            <h3 class="text-xl font-bold mb-2">Pedido de Informações sobre Matrícula</h3>
+            <p class="text-gray-600 mb-6">Preencha os dados abaixo. Será encaminhado para o WhatsApp do Colégio para dar continuidade ao atendimento.</p>
+            <form id="contact-form" class="space-y-5" novalidate>
+              <fieldset class="border-none p-0 m-0">
+                <legend class="font-semibold text-green-dark mb-3">Dados do Encarregado</legend>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <label>Nome Completo *<input id="field-nome" name="nome" required placeholder="O seu nome completo" autocomplete="name"></label>
+                  <label>Telefone *<input id="field-telefone" name="telefone" type="tel" required placeholder="+258 8X XXX XXXX" autocomplete="tel"></label>
+                </div>
+                <label class="mt-4 block">Email <span class="text-gray-400 font-normal text-sm">(opcional)</span><input id="field-email" name="email" type="email" placeholder="o-seu@email.com" autocomplete="email"></label>
+              </fieldset>
+              <fieldset class="border-none p-0 m-0">
+                <legend class="font-semibold text-green-dark mb-3">Dados do Aluno</legend>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <label>Nome do Aluno *<input id="field-aluno" name="aluno" required placeholder="Nome completo do aluno"></label>
+                  <label>Classe Pretendida *
+                    <select id="field-classe" name="classe" required>
+                      <option value="">Seleccionar classe</option>
+                      <option>1ª Classe</option>
+                      <option>2ª Classe</option>
+                      <option>3ª Classe</option>
+                      <option>4ª Classe</option>
+                      <option>5ª Classe</option>
+                      <option>6ª Classe</option>
+                      <option>7ª Classe</option>
+                      <option>8ª Classe</option>
+                      <option>9ª Classe</option>
+                      <option>10ª Classe</option>
+                      <option>11ª Classe</option>
+                      <option>12ª Classe</option>
+                      <option>Reforço Escolar</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+              <button id="submit-btn" class="w-full bg-red-bright hover:bg-red-700 text-white font-bold py-4 rounded-xl transition-colors" type="submit">Enviar pedido de contacto → WhatsApp</button>
+              <p class="text-sm text-gray-500 text-center">Após enviar, será encaminhado para o WhatsApp do Colégio com os seus dados já preenchidos.</p>
+            </form>
+          </div>
+
+          <!-- INFORMAÇÕES DE CONTACTO -->
+          <aside class="bg-green-primary rounded-3xl p-8 text-white">
+            <h3 class="text-xl font-bold mb-6">Entre em Contacto</h3>
+            <div class="space-y-6">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-light shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                <div>
+                  <strong>Telefone</strong><br>
+                  <a href="tel:858681368" class="underline hover:text-green-light">858 681 368</a>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-light shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <div>
+                  <strong>Localização</strong><br>
+                  <span>Matola, Intaka 2, Moçambique</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-light shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <div>
+                  <strong>Horário</strong><br>
+                  <span>Segunda a Sexta: 7h00 - 17h00</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 space-y-3">
+              <p class="text-white/80 text-sm">Prefere contactar directamente?</p>
+              <a href="https://wa.me/258858681368?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20informa%C3%A7%C3%B5es%20sobre%20o%20Col%C3%A9gio%20P%C3%A9rcia." id="whatsapp-directo" target="_blank" rel="noopener" class="block text-center bg-white text-green-primary font-bold py-3 px-6 rounded-xl">Falar pelo WhatsApp</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="bg-green-dark text-white">
+    <div class="container py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4"><img src="lovable-uploads/9b99876a-00a5-4b05-8f77-5a0dde86dd9d.png" alt="Logótipo do Colégio Pércia" class="w-12 h-12 rounded-full" width="48" height="48" loading="lazy"><strong class="text-2xl">Colégio Pércia</strong></div>
+          <p class="text-green-100 mb-4">Escola na Cidade da Matola — ensino da 1.ª à 12.ª classe em Moçambique.</p>
+          <div>
+            <h4 class="text-sm font-semibold text-green-100 uppercase tracking-wider mb-2">Redes sociais</h4>
+            <div class="flex items-center gap-3">
+              <a href="https://www.tiktok.com/@colegiopercia" target="_blank" rel="noopener noreferrer" aria-label="TikTok do Colégio Pércia" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 105.55 6.29V9.43a8.2 8.2 0 004.77 1.52v-3.5a4.84 4.84 0 01-1-1.26z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/colegiopercia.official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Colégio Pércia" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://web.facebook.com/colegiopercia21/" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Colégio Pércia" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-white">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Navegação</h3>
+          <nav aria-label="Rodapé" class="space-y-2 flex flex-col">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre o Colégio</a>
+            <a href="programas.html">Programas de Ensino</a>
+            <a href="inscricoes.html">Inscrições e Matrículas</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Localização e Contacto</h3>
+          <!-- Marcação semântica de morada (Schema.org via microdata) -->
+          <address class="not-italic space-y-2 text-green-100 text-sm">
+            <p class="flex items-center gap-2"><svg class="w-4 h-4 text-green-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><a href="tel:+258858681368" class="text-green-100 hover:text-white">858 681 368</a></p>
+            <p class="flex items-start gap-2"><svg class="w-4 h-4 text-green-light shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>Matola, Intaka 2<br><span class="text-xs text-green-100/80">Cidade da Matola, Moçambique</span></span></p>
+          </address>
+        </div>
+      </div>
+      <p class="border-t border-green-medium mt-8 pt-8 text-center text-green-100">© 2025 Colégio Pércia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="fixed bottom-5 right-5 hidden bg-green-dark text-white px-6 py-4 rounded-xl shadow-2xl" role="status"></div>
+  <div id="video-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-4"><div class="relative w-full max-w-4xl bg-black"><button id="modal-close" class="absolute top-3 right-3 z-10 text-white text-3xl" aria-label="Fechar vídeo">×</button><div id="modal-content" class="aspect-video"></div></div></div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
