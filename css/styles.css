@@ -67,6 +67,36 @@ header #menu-toggle:focus-visible, header a:focus-visible { outline: 2px solid c
 .fee-list { border-top: 1px solid #e5e7eb; }
 .fee-list > div { display: flex; justify-content: space-between; gap: 1rem; padding: .85rem 0; border-bottom: 1px solid #e5e7eb; }
 .fee-list dd { margin: 0; font-weight: 700; white-space: nowrap; }
+/* ── Secção Propinas e Valores 2027 ────────────────────────────────── */
+.propinas-table-wrap { width: 100%; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.propinas-table { width: 100%; min-width: 580px; border-collapse: collapse; text-align: left; }
+.propinas-table thead th { padding: 1.125rem 1.25rem; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #151515; background-color: #f9fafb; border-bottom: 2px solid #e5e7eb; white-space: nowrap; }
+.propinas-table tbody td { padding: 1rem 1.25rem; font-size: 0.95rem; color: #1f2937; border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+.propinas-table tbody tr:last-child td { border-bottom: none; }
+.propinas-table tbody tr:hover td { background-color: rgba(30, 152, 79, 0.03); }
+.propinas-table .col-categoria { font-weight: 600; color: #151515; white-space: nowrap; }
+.propinas-table .col-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Destaque para a Propina Mensal */
+.propinas-table thead th.col-propina { background-color: #eefaf2; color: #151515; border-bottom-color: #1e984f; border-left: 1px solid #d1fae5; border-right: 1px solid #d1fae5; }
+.propinas-table tbody td.col-propina { background-color: #f7fdf9; font-weight: 700; font-size: 1.0625rem; color: #1e984f; border-left: 1px solid #d1fae5; border-right: 1px solid #d1fae5; }
+.propinas-table tbody tr:hover td.col-propina { background-color: #ecfdf5; }
+/* Versão Mobile (< 640px): adaptação da tabela para apresentação confortável em cartões compactos sem provocar overflow horizontal */
+@media (max-width: 639px) {
+  .propinas-table-wrap { background: transparent; border: none; box-shadow: none; border-radius: 0; overflow: visible; }
+  .propinas-table { min-width: 0; }
+  .propinas-table, .propinas-table tbody { display: block; width: 100%; }
+  .propinas-table thead { display: none; }
+  .propinas-table tbody tr { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.875rem; padding: 0.875rem 1rem; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 0.875rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+  .propinas-table tbody td { padding: 0; border: none; }
+  .propinas-table tbody td.col-categoria { grid-column: 1 / -1; font-size: 1rem; font-weight: 700; color: #151515; padding-bottom: 0.5rem; border-bottom: 1px solid #f3f4f6; margin-bottom: 0.25rem; display: flex; justify-content: space-between; align-items: center; white-space: normal; }
+  .propinas-table tbody td.col-propina { grid-column: 1 / -1; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.5rem; padding: 0.625rem 0.75rem; display: flex; justify-content: space-between; align-items: baseline; text-align: left; margin-bottom: 0.25rem; }
+  .propinas-table tbody td.col-propina::before { content: "Propina mensal"; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: #166534; }
+  .propinas-table tbody td.col-propina .valor-destaque { font-size: 1.1875rem; font-weight: 800; color: #1e984f; }
+  .propinas-table tbody td.col-matricula, .propinas-table tbody td.col-processo { background: #f9fafb; border: 1px solid #f3f4f6; border-radius: 0.5rem; padding: 0.5rem 0.625rem; display: flex; flex-direction: column; text-align: left; }
+  .propinas-table tbody td.col-matricula::before { content: "Matrícula"; font-size: 0.7rem; font-weight: 500; color: #6b7280; margin-bottom: 0.15rem; }
+  .propinas-table tbody td.col-processo::before { content: "Processo"; font-size: 0.7rem; font-weight: 500; color: #6b7280; margin-bottom: 0.15rem; }
+  .propinas-table tbody td.col-matricula .valor-sub, .propinas-table tbody td.col-processo .valor-sub { font-size: 0.925rem; font-weight: 600; color: #1f2937; }
+}
 .document-checklist { display: grid; gap: 1rem; list-style: none; padding: 0; }
 .document-checklist li { display: flex; align-items: flex-start; gap: .75rem; color: #374151; }
 .check-icon { display: grid; place-items: center; width: 1.5rem; height: 1.5rem; flex: 0 0 1.5rem; color: #256d1b; }
@@ -83,4 +113,9 @@ header a:focus-visible, header button:focus-visible, .bg-green-dark a:focus-visi
 @media (min-width: 640px) { .price-subjects { grid-template-columns: repeat(2, minmax(0, 1fr)); }.home-hero__actions a { width: auto; margin-inline: 0; } }
 @media (min-width: 768px) { .grid-responsive-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }.grid-responsive-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }.grid-responsive-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }.section-spacing { padding-block: 5rem; }.home-hero { padding-block: 9.5rem 4.5rem; } }
 @media (min-width: 1024px) { .grid-responsive-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }.grid-responsive-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }.section-spacing-large { padding-block: 6rem; }.home-hero { padding-block: 10rem 5rem; }.home-hero .grid-responsive-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }.contact-layout { grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 1fr); } }
+/* ── Botão Flutuante de WhatsApp ────────────────────────────────── */
+.whatsapp-floating { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 45; display: flex; align-items: center; justify-content: center; width: 3.75rem; height: 3.75rem; border-radius: 9999px; background-color: #25D366; color: #ffffff; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45), 0 4px 10px rgba(0, 0, 0, 0.15); transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease; outline: none; }
+.whatsapp-floating:hover { background-color: #20ba5a; transform: translateY(-3px) scale(1.05); box-shadow: 0 14px 28px rgba(37, 211, 102, 0.55), 0 6px 14px rgba(0, 0, 0, 0.2); }
+.whatsapp-floating:focus-visible { outline: 3px solid #151515; outline-offset: 3px; }
+@media (max-width: 639px) { .whatsapp-floating { bottom: 1.25rem; right: 1.25rem; width: 3.35rem; height: 3.35rem; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }

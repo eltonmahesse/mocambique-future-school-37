@@ -23,8 +23,9 @@ const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const showToast = (message, success = true) => {
   const toast = $('#toast');
+  if (!toast) return;
   toast.textContent = message;
-  toast.className = `fixed bottom-5 right-5 ${success ? 'bg-green-dark' : 'bg-red-bright'} text-white px-6 py-4 rounded-xl shadow-2xl`;
+  toast.className = `fixed bottom-24 right-5 sm:bottom-24 sm:right-6 ${success ? 'bg-green-dark' : 'bg-red-bright'} text-white px-6 py-4 rounded-xl shadow-2xl z-50`;
   window.setTimeout(() => toast.classList.add('hidden'), 4000);
 };
 
@@ -146,11 +147,16 @@ function setupForm() {
       return;
     }
 
+    // Disparar evento no dataLayer para o GTM
+    if (window.ColegioPerciaWA) {
+      window.ColegioPerciaWA.trackClick('home', 'formulario_matricula', 'matricula');
+    }
+
     // Construir mensagem estruturada para a secretaria
     let linhas = [
       'NOVO CONTACTO — WEBSITE COLÉGIO PÉRCIA',
       '',
-      'Olá, gostaria de iniciar o processo de matrícula.',
+      'Olá! Gostaria de iniciar o processo de matrícula para 2027.',
       '',
       'Dados do encarregado:',
       'Nome: ' + nome,
@@ -165,12 +171,14 @@ function setupForm() {
       'Nome do aluno: ' + aluno,
       'Classe pretendida: ' + classe,
       '',
-      'Origem: Website do Colégio Pércia',
-      'Gostaria de receber informações sobre o processo de matrícula.',
+      'Origem: Website — Página Inicial.',
+      'Botão: Enviar pedido de contacto.'
     ]);
 
     const mensagem = linhas.join('\n');
-    const url = 'https://wa.me/258858681368?text=' + encodeURIComponent(mensagem);
+    const url = window.ColegioPerciaWA
+      ? window.ColegioPerciaWA.buildUrl(mensagem)
+      : 'https://wa.me/258876780260?text=' + encodeURIComponent(mensagem);
 
     window.open(url, '_blank', 'noopener,noreferrer');
     form.reset();
